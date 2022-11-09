@@ -1,0 +1,132 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.header{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.header p,.header a{
+    color: black;
+}
+.header>img:first-child{
+    width: 20%;
+}
+a{
+    text-decoration: none;
+}
+.header>img:last-child{
+    width: 50%;
+}
+.header p{
+    text-align: center;
+    background-color: black;
+    padding : 3px;
+    color: white;
+}
+.foot{
+    max-width: 1170px;
+    background-color: whitesmoke;
+    margin: auto;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+ul,li{
+    list-style: none;
+}
+.footer{
+    background-color: #24262b;
+    padding: 60px 0; 
+    height: 430px;
+}
+
+.m_row{
+    margin: 50px 50px 0px 50px;
+}
+footer h1,footer h2{
+    color: white;
+}
+footer p,footer a{
+    color: rgb(114, 113, 112);
+}
+footer a:hover{
+    cursor: pointer;
+    color: rgb(88, 88, 87);
+}
+#foot-col input{
+    border: 0px;
+    padding: 7px;
+    margin-bottom: 2px;
+}
+#foot-col button{
+    background-color: rgb(255, 170, 0);
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    padding: 7px;
+    margin-bottom: 2px;
+}
+#m_subfooter{
+    color: rgb(88, 88, 87);
+    margin-top: 5px;
+    background-color: rgb(15, 14, 14);
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+.social i{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+}
+#pr_logo{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+}
+#pr_logo>input{
+    height: 25px;
+    margin-top: 55px;
+    margin-left: 40px;
+    width: 250px;
+}
+#top{
+    display: flex;
+    flex-wrap: wrap;
+    height: 120px;
+}
+.cart{
+    margin-top: 30px;
+    height: 75px;
+    width: 85px;
+    margin-left: 10px;
+}
+#par>div:first-child{
+    margin-left: 250px;
+   
+}
+#accn{
+    margin-left: 350px;
+}
+
+#logo{
+    width: 170px;
+    height: 150px;
+}
+.nav-b{
+   display: flex;
+    justify-content: space-around;
+    padding: 8px;
+}
+.log{
+    margin-left: 30px;
+}
+#logo~div{
+    margin-top: 50px;
+}
+.log>div:first-child{
+    margin-left: 25px;
+}
