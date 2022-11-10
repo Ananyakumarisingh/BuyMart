@@ -6,10 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./nav-footer.css">
-    <link rel="stylesheet" href="">
+    <link rel="icon" href="./download.png" type="image/x-icon">
+    <link rel="stylesheet" href="./slide.css">
     <title>BuyMart</title>
     <style>
-    
+    /* .line{
+        border-bottom: 1px solid black;
+        width: 80%;
+        margin-left: 225px;
+        margin-top: 40px;
+        position: relative;
+        top: 30px;
+    } */
+    .body_container{
+        width: 85%;
+        margin: auto;
+        border: 1px solid red ;
+    }
+    .body_container button{
+        background-color: rgb(3, 215, 3);
+        color: white;
+        padding: 4px 8px;
+        border: none;
+        border-radius: 5px;
+    }
+    .product_parent{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        gap: 30px;
+    }
+    .products{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .products>div{
+        display: flex;
+        padding: 0 5px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .products>div h3{
+        color: rgb(255, 145, 0);
+    }
+    .bottom_container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
     </style>
 </head>
 <body>
@@ -18,11 +59,11 @@
         <p><span id="coupon">Up to Rs.500 Off on Prepaid Purchases - Use Coupon <span style="color:#bc522f;font-weight:bolder">"PREPAID"</span></span></p>
         <div id="top">
             <div id="pr_logo">
-                <img  id="logo" src="./Handwritten.png" alt="">
+                <img  id="logo" src="./Handwritten.png" href="./index.html" alt="">
                 <input type="text" placeholder="Search" herc="">
                 <div id="accn"><a href="">Seller's Corner </a>|<a href=""> Feedback </a>|<a href=""> Blog </a>|<a href=""> Delivery Info </a></div>
                 <div class="log">
-                    <div><a href=""> LOGIN </a> / <a href=""> SIGN UP </a></div>
+                    <div><a href="./index.html"> LOGIN </a> / <a href="./signup.html"> SIGN UP </a></div>
                     <div><h3>WELCOME GUEST</h3></div>
                 </div>
                 <a href="./cart.html"><img class="cart" src="https://www.bing.com/th?id=OIP.3eKgGISBoiSTPa5lrxZErgHaFL&w=298&h=209&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt=""></a>
@@ -32,7 +73,7 @@
         <div class="homeul">
             <div class="nav-b">
             <div><ul><a href=""><li>Categories</a><span><i class="fa-sharp fa-solid fa-caret-down"></i></span></li></div>
-            <div><li><a href="">Flash Sale<span></span></a></li></div>    
+            <div><li><a href="./flashsale.html">Flash Sale<span></span></a></li></div>    
             <div><li><a href="">Best Deals<span></span></a> </li></div>    
             <div><li><a href="">Shop by Brand<span></span></a></li></div>
             <div><li><a href="">Trading<span></span></a></li></div>
@@ -40,49 +81,1172 @@
             </div>
         </div>
     </div>
-
+    <div class="cont"></div>
     <!-- Slide -->
-    <div id="slider">
-        <div id="slide">
-            <!-- radio button -->
+    <!-- <div class="slider">
+        <div class="slides">
+            radio button
             <input type="radio" name="radio-btn" id="radio1"><input type="radio" name="radio-btn" id="radio2"><input type="radio" name="radio-btn" id="radio3"><input type="radio" name="radio-btn" id="radio4"><input type="radio" name="radio-btn" id="radio5"><input type="radio" name="radio-btn" id="radio6"><input type="radio" name="radio-btn" id="radio7"><input type="radio" name="radio-btn" id="radio8"><input type="radio" name="radio-btn" id="radio9">
-            <!-- slide strat -->
-            <div class="slide first">
-                <img src="https://d64lkarmo2mrq.cloudfront.net/img/home/international-banner-02.webp" alt="">
+             slide strat -->
+    
+             <div id="slide"></div>
+
+
+    <div class="body_container">
+        <div class="line1"></div>
+        <h2>Fast moving products</h2>
+        <div class="product_parent">
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNjcyL0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>KOSPET TANK M1 Smartwatch</h3>
+                <button>4.4/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹8,499</h3>
+                    <h4>flat 65% OFF</h4>
+                </div>
             </div>
-            <div><img src="https://d64lkarmo2mrq.cloudfront.net/img/home/watch-offer-banner.webp" alt=""></div>
-            <div><img src="https://d64lkarmo2mrq.cloudfront.net/img/home/turkey-fashion.webp" alt=""></div>
-            <div><img src="https://d64lkarmo2mrq.cloudfront.net/img/home/made-in-turkey.webp" alt=""></div>
-            <div><img src="https://d64lkarmo2mrq.cloudfront.net/img/home/34535_new_arrivals.webp" alt=""></div>
-            <div><img src="https://d64lkarmo2mrq.cloudfront.net/img/home/4544_500_off.webp" alt=""></div>
-            <div><img src="https://d64lkarmo2mrq.cloudfront.net/img/home/544545_best_selling.webp" alt=""></div>
-            <div><img src="https://d64lkarmo2mrq.cloudfront.net/img/home/new-global.webp" alt=""></div>
-            <div><img src="https://d64lkarmo2mrq.cloudfront.net/img/home/prepaid-order-free-watch-banner.webp" alt=""></div>
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-                <div class="auto-btn5"></div>
-                <div class="auto-btn6"></div>
-                <div class="auto-btn7"></div>
-                <div class="auto-btn8"></div>
-                <div class="auto-btn9"></div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODcwL0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Retro Quartz Pocket Watch for Men</h3>
+                <button>4.1/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹1,299</h3>
+                    <h4>flat 62% OFF</h4>
+                </div>
             </div>
-        </div>
-        <div class="navigation-manual">
-            <lable for="radio1" class="manual-btn"></lable>
-            <lable for="radio2" class="manual-btn"></lable>
-            <lable for="radio3" class="manual-btn"></lable>
-            <lable for="radio4" class="manual-btn"></lable>
-            <lable for="radio5" class="manual-btn"></lable>
-            <lable for="radio6" class="manual-btn"></lable>
-            <lable for="radio7" class="manual-btn"></lable>
-            <lable for="radio8" class="manual-btn"></lable>
-            <lable for="radio9" class="manual-btn"></lable>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODg5L1doaXRlX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Multifunctional Electronics Cleaning Brush Kit</h3>
+                <button>4.3/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹1,299</h3>
+                    <h4>flat 74% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjIyMDgzXC9CZWlnZV9uXzFfMS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>Mens Casual Business Watch</h3>
+                <button>4.9/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹3,299</h3>
+                    <h4>flat 67% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjE4MDYwL1doaXRlX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>KOSPET TANK M1 Smartwatch</h3>
+                <button>4.4/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹7,699</h3>
+                    <h4>flat 65% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMjI1L1JlZF9uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
+                <h3>3D BENZ AMG WHEEL WATCH</h3>
+                <button>1.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹8,999</h3>
+                    <h4>flat 64% OFF</h4>
+                </div>
+            </div>
         </div>
     </div>
-    
+    <div class="body_container">
+        <div class="line2"></div>
+        <h2>Home Decor</h2>
+        <div class="product_parent">
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM0MjU4L0JsdWVfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>360 LED Corridor Sill Light</h3>
+                <button>4.6/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹4,999</h3>
+                    <h4>flat 72% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxOTEwL011bHRpfmNvbG9yX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Fierce Warrior House</h3>
+                <button>4.7/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹3,799</h3>
+                    <h4>flat 73% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyMTE1L0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Astronaut Pen Holder</h3>
+                <button>4.4/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹8,499</h3>
+                    <h4>flat 65% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxOTAzL0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Pineapple Shaped Horse</h3>
+                <button>3.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹3,499</h3>
+                    <h4>flat 73% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyMTE2L0dvbGRfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>Metal Photo Frame</h3>
+                <button>4.1/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹2,999</h3>
+                    <h4>flat 73% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyMTExL0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Nordic Dog Ornament</h3>
+                <button>4.4/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹45,000</h3>
+                    <h4>flat 53% OFF</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body_container">
+        <div class="line2"></div>
+        <h2>Ballet Flats</h2>
+        <div class="product_parent">
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MjAzL1llbGxvd18zNl8yX2NhcG9uZX5oYW5hfnRyZW5kfndvbWVufnllbGxvd35iYWxsZXR+fjYyZmNkNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
+                <h3>Women Hana Trend Ballet Flats</h3>
+                <button>4.5/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹3,999</h3>
+                    <h4>flat 33% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MzE2L1Bvd2Rlcl8zNl8zX2NhcG9uZX5oYW5hfnRyZW5kfndvbWVufnBvd2Rlcn5iYWxsZXR+fjMyZDd+MS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
+                <h3>Women Hana Trend Powder Bullet Flats</h3>
+                <button>4.2/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹3,999</h3>
+                    <h4>flat 33% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MjEyL1BsYXRpbnVtXzM2XzNfY2Fwb25lfmhhbmF+dHJlbmR+d29tZW5+cGxhdGludW1+YmFsbGV+YWV+MTgxLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Women Hana Trend Khaki Ballet Flats</h3>
+                <button>4.7/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹3,999</h3>
+                    <h4>flat 33% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MjA2L011bHRpY29sb3JlZF8zNl8xX2NhcG9uZX5oYW5hfnRyZW5kfndvbWVufm11bHRpY29sb3JlZH5ifn4yMzE1MS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
+                <h3>Women Hana Trend Multicolored Ballet Flats</h3>
+                <button>3.7/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹3,999</h3>
+                    <h4>flat 27% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MjA5L1llbGxvd18zNl84X2NhcG9uZX5oYW5hfnRyZW5kfndvbWVufnllbGxvd35iYWxsZXR+fjV+MzQwMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
+                <h3>Women Hana Trend Yellow Ballet Flats</h3>
+                <button>3.9/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹3,999</h3>
+                    <h4>flat 33% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MjcyL0JsYWNrXzM2XzFfY2Fwb25lfmhhbmF+dHJlbmR+d29tZW5+YmxhY2t+YmFsbGV0fmZ+NmRkNGYxLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Women Hana Trend Yellow Ballet Flats</h3>
+                <button>4.4/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹3,900</h3>
+                    <h4>flat 33% OFF</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body_container">
+        <div class="line2"></div>
+        <h2>Handbags & Clutches</h2>
+        <div class="product_parent">
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MjMyL051ZGVfU1RBTkRBUkRfM19jYXBvbmV+bWVydmlsbGV+d29tZW5+bnVkZX5oYW5kYmFnfmQyNzA2Yi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
+                <h3>Merville Women Handbags</h3>
+                <button>4.9/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,499</h3>
+                    <h4>flat 21% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM0OTgyL011bHRpY29sb3JlZF9TVERfMl9jYXBvbmV+bGV2YW50ZX53b21lbn5tdWx0aWNvbG9yZWR+aGFuZH5lfmFjYjYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>Levante Women Multicolored Handbags</h3>
+                <button>5.0/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹3,499</h3>
+                    <h4>flat 30% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MzgwL1Jvc2VfU1RBTkRBUkRfMl9jYXBvbmV+bGV2YW50ZX53b21lbn5yb3NlfmhhbmRiYWd+fjU3ODN+LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Levante Women Rose Handbags</h3>
+                <button>4.4/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹6,999</h3>
+                    <h4>flat 65% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MzA3L0xlb3BhcmRfbl81X2NhcG9uZX5sZXZhbnRlfndvbWVufmxlb3BhcmR+aGFuZGJhZ35kfmJjMTMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>Levante Women Handbag</h3>
+                <button>3.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹3,499</h3>
+                    <h4>flat 73% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MjMyL051ZGVfU1RBTkRBUkRfM19jYXBvbmV+bWVydmlsbGV+d29tZW5+bnVkZX5oYW5kYmFnfmQyNzA2Yi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
+                <h3>Merville Women Handbags</h3>
+                <button>4.9/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,499</h3>
+                    <h4>flat 21% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM0OTgyL011bHRpY29sb3JlZF9TVERfMl9jYXBvbmV+bGV2YW50ZX53b21lbn5tdWx0aWNvbG9yZWR+aGFuZH5lfmFjYjYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>Levante Women Multicolored Handbags</h3>
+                <button>5.0/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹3,499</h3>
+                    <h4>flat 30% OFF</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body_container">
+        <div class="line2"></div>
+        <h2>Small Appliances</h2>
+        <div class="product_parent">
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM0MjYzL1doaXRlX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>400ml Multifunctional Electric Squeezer</h3>
+                <button>4.6/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹7,999</h3>
+                    <h4>flat 72% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM0MjY1L1Bpbmtfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>350ml Electric Portable Juicing Cup</h3>
+                <button>4.7/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹4,799</h3>
+                    <h4>flat 73% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjIzOTc0L0dyZWVuX25fMV9NaXhlckdyaW5kZXIxLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Multi-Function Grinder</h3>
+                <button>4.9/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹4,499</h3>
+                    <h4>flat 65% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjIzOTgwL0JsdWVfbl8xX0hhbmRUeXBlRm9hbStNYWtlcjEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>Multi-Function Grinder</h3>
+                <button>3.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,199</h3>
+                    <h4>flat 73% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjIzODA0L1doaXRlX25fMV9KdWljZXJtaXhlcjEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>300ml Mini Fruit Mixer</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹3,599</h3>
+                    <h4>flat 73% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjIzODA5L0JsYWNrX25fMV9KdWljZXJtaXhlcjEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>400ml Mixer juicer</h3>
+                <button>4.4/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹3,900</h3>
+                    <h4>flat 53% OFF</h4>
+                </div>
+            </div>
+
+            
+
+            <!-- <div>
+                <a href=""><img src="https://www.meanbuy.com/shop/HomeLiving/KitchenWares" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+            </div> -->
+        </div>
+    </div>
+    <div class="body_container">
+        <div class="line2"></div>
+        <h2>Keyboards & Mouse</h2>
+        <div class="product_parent">
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjI0NDMyL0JsYWNrX25fMV9XaXJlbGVzc0tleWJvYXJkMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
+                <h3>Mini Foldable Keyboard</h3>
+                <button>4.6/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹4,999</h3>
+                    <h4>flat 72% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyMTM0L1JlZF9uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
+                <h3>Makeup Keyboard</h3>
+                <button>4.7/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹11,999</h3>
+                    <h4>flat 73% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMTM3L1Jvc2Vfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>Xiaomi Mi Portable Mouse</h3>
+                <button>4.9/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹4,499</h3>
+                    <h4>flat 65% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMTM2L0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Xiaomi Mi Portable Mouse</h3>
+                <button>5.0/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹6,499</h3>
+                    <h4>flat 73% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjI0Mzk1L0JsYWNrX25fMV9XaXJlZEtleWJvYXJkMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
+                <h3>Mechanical Wired Keyboard</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹3,599</h3>
+                    <h4>flat 73% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjE3NzM4L0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>3D Wireless Mouse</h3>
+                <button>4.4/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,900</h3>
+                    <h4>flat 53% OFF</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body_container">
+        <div class="line2"></div>
+        <h2>Bluetooth Earphone</h2>
+        <div class="product_parent">
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM0MDk1L0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Songx Devil Cat TWS Wireless Earphone</h3>
+                <button>3.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹8,999</h3>
+                    <h4>flat 61% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNzM4L0JsdWVfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>QCY G1 Gaming Earburd</h3>
+                <button>4.1/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹6,999</h3>
+                    <h4>flat 65% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzOTk5L0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Awei 5.0 Stereo Headphone</h3>
+                <button>3.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹4,999</h3>
+                    <h4>flat 67% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM0MDk0L0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>IPENGOO TWS Wireless Headset</h3>
+                <button>3.5/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹6,999</h3>
+                    <h4>flat 70% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNzQwL0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Wireless Mini Portable Speaker With Earburds</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹3,999</h3>
+                    <h4>flat 73% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjI3NDk2L0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Nubia TWS Cyberpods</h3>
+                <button>4.4/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹9,900</h3>
+                    <h4>flat 75% OFF</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body_container">
+        <div class="line2"></div>
+        <h2>Makeup Accessories</h2>
+        <div class="product_parent">
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyMDY0L0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Four-in-one Detachable Bag</h3>
+                <button>3.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹2,999</h3>
+                    <h4>flat 61% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyMTMyL0JsdWVfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>Girl Storage Tray</h3>
+                <button>4.1/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹6,999</h3>
+                    <h4>flat 65% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxNzA3L0dyZWVuX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Makeup & Jewelry Organizer</h3>
+                <button>3.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹4,999</h3>
+                    <h4>flat 67% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyMDYwL0dyZWVuX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Cosmatick Storage box</h3>
+                <button>3.5/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹6,999</h3>
+                    <h4>flat 70% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyMTMxL1Bpbmtfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>Car LED Makeup Orgainser</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹3,999</h3>
+                    <h4>flat 73% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxNzA5L0dyZWVuX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Lipstick Organizer</h3>
+                <button>4.4/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹2,800</h3>
+                    <h4>flat 75% OFF</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body_container">
+        <div class="line2"></div>
+        <h2>Kitchen Wares</h2>
+        <div class="product_parent">
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzMDcyL0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Ceramic Tea Set With Storage Bag</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹6,999</h3>
+                    <h4>flat 71% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyMDA4L1BpbmtfU18xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3></h3>
+                <button>4.1/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹2,999</h3>
+                    <h4>flat 65% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyMDEwL0JsdWVfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>Japanese Soup Bowl</h3>
+                <button>3.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹4,999</h3>
+                    <h4>flat 67% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxODQyL0dyZWVuX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Ceramic Fruit Tray With Stand</h3>
+                <button>3.5/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹6,999</h3>
+                    <h4>flat 70% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxNzU3L1doaXRlX25fMV85MTAyOTg1NjY2XzEwNzA2NTQ2MC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
+                <h3>Gold Rim Marble Cutting Board</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,999</h3>
+                    <h4>flat 73% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxODQ1L0dyYXlfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>Ceramic Dessert Cone</h3>
+                <button>4.4/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹2,800</h3>
+                    <h4>flat 75% OFF</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body_container">
+        <div class="line2"></div>
+        <h2>Women Essentials</h2>
+        <div class="product_parent">
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODYyL1Bpbmtfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>Crystal Massager for Skincare-Guasha</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,499</h3>
+                    <h4>flat 31% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODM5L0Jyb3duX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>50 Pcs Mini Candy Luggage Gift Box</h3>
+                <button>4.1/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,499</h3>
+                    <h4>flat 35% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODYwL0dyYXlfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>Women Luminous Shoulder Bag</h3>
+                <button>3.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹3,599</h3>
+                    <h4>flat 37% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODQzL1llbGxvd19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
+                <h3>A6 Cute Bee Diary Notebook</h3>
+                <button>3.5/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹1,499</h3>
+                    <h4>flat 30% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODQyL0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Women Long-Sleeved Cardigan Jacket</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹1,999</h3>
+                    <h4>flat 33% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODYzL1Bpbmtfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>Protective IPhone Case 13 Pro Max</h3>
+                <button>4.4/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹1,800</h3>
+                    <h4>flat 35% OFF</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body_container">
+        <div class="line2"></div>
+        <h2>Stiletto Heels & Slip On</h2>
+        <div class="product_parent">
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1NDE3L0VjcnUrQmVpZ2VfMzZfMl9jYXBvbmV+c2VsdmF+cG9pbnRlZH50b2V+cGF0ZW50fmxlYXRoZX41ZX40ZDkuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>Women Pointed Toe High Heel Stiletto</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,499</h3>
+                    <h4>flat 31% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MDI0L0hvdW5kc3Rvb3RoXzM2XzJfY2Fwb25lfnNlbHZhfnBvaW50ZWR+dG9lfmNyb3diYXJ+cGF0dGV+ZDA3fjJlLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Wemen Pointed Toe Crowbar Pattern Heel</h3>
+                <button>4.1/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,499</h3>
+                    <h4>flat 35% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1NDAzL0JsYWNrXzM2XzJfY2Fwb25lfnBvaW50ZWR+dG9lfnB5cmFtaWR+cGF0dGVybn5wYXR+NX5lMTMxLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Women Patent Leather Mid Heel Stiletto</h3>
+                <button>3.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹6,599</h3>
+                    <h4>flat 37% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MzYxL01pbnQrR3JlZW5fMzZfMV9jYXBvbmV+b3V0Zml0dGVyc34xMjAyfndvbWVufm1pbnR+Z3JlZX40MDFjfmEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>Outfitter Women Mint Green Stiletto</h3>
+                <button>3.5/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹6,999</h3>
+                    <h4>flat 30% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MzQ1L0xlb3BhcmRfMzZfM19jYXBvbmV+b3V0Zml0dGVyc342NX53b21lbn5sZW9wYXJkfnN0aX40NDl+MjEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>Outfitters Women Stiletto</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,999</h3>
+                    <h4>flat 33% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MjI0L011bHRpY29sb3JlZF80Ml84X2NhcG9uZX5ibG9ja35oZWVsfnNsaW5nYmFja353b21lbn5tdWx0fjU4ZTA1MS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
+                <h3>Women Block Heel Singback Multicolored Shoes</h3>
+                <button>4.4/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,800</h3>
+                    <h4>flat 35% OFF</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body_container">
+        <div class="line2"></div>
+        <h2>Clothing</h2>
+        <div class="product_parent">
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM0OTAyL1doaXRlX1NfMV8xLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Women White Sweat Tunic</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,999</h3>
+                    <h4>flat 31% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM0NTkxL1doaXRlX1NfMV8xLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Striped Patterned Elastic Waist Pants</h3>
+                <button>4.1/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,499</h3>
+                    <h4>flat 35% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM0ODQwL1BpbmtfU18xXzEucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>Happiness istanbul Jumpsuit - powdered pink - Relaxed</h3>
+                <button>3.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹6,599</h3>
+                    <h4>flat 37% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM0NjM0L1doaXRlX1NfMV8xLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Red Chanel Blazer Jacket</h3>
+                <button>3.5/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹9,999</h3>
+                    <h4>flat 30% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM0Njc2L1BpbmtfU18xXzEucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>Sleaveless Trench Vest Coat</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,999</h3>
+                    <h4>flat 33% OFF</h4>
+                </div>
+            </div>
+            <div class="products">
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM0Nzc5L0Jyb3duX1NfMV8xLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Women Block Heel Singback Multicolored Shoes</h3>
+                <button>4.4/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,800</h3>
+                    <h4>flat 35% OFF</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_container">
+        <h2>NEW ARRIVALS</h2>
+        <div class="bottom_child">
+            <div>
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2NTIzXC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
+                <h3>T10 Smart Watch With Earburds</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,999</h3>
+                    <h4>flat 31% OFF</h4>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_child">
+            <div>
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2NDkzXC9SZWRfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>LOFREE Wireless Mouse</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹3,999</h3>
+                    <h4>flat 31% OFF</h4>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_child">
+            <div>
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2NDA0XC9Vbmtub3duX25fM18xMjc0OTI1MjUxMl8yODAwMTM3NTcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>Painting Stencils Ruler Drawing</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹1,999</h3>
+                    <h4>flat 31% OFF</h4>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_child">
+            <div>
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2NDAxXC9QdXJwbGVfbl8xMV8xNDQyOTc5OTUxMF8xNTQ5MDA4NTMzLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Kids Wooden 3D Three-Dimensional</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,999</h3>
+                    <h4>flat 31% OFF</h4>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_child">
+            <div>
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2Mzg2XC9Vbmtub3duX25fNl9PMUNOMDFlTTZNU3ExUk5PNlZhZDVwSV9+fjI4ODQ4NjIwOTl+MH5jaWIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>4Pcs Cartoon Painting Templet Set</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,999</h3>
+                    <h4>flat 31% OFF</h4>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_child">
+            <div>
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2Mzc1XC9Vbmtub3duX25fN18yMzQ5NDk0MDU4OF8yODAwMTM3NTcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>6Pcs set color Jel Pen</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,999</h3>
+                    <h4>flat 31% OFF</h4>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_child">
+            <div>
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2MzYxXC9Vbmtub3duX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>3Pcs Ceramic Storage Jar</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,999</h3>
+                    <h4>flat 31% OFF</h4>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_child">
+            <div>
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2MzYwXC9CbHVlX25fM19PMUNOMDFQWnJ2V3oyTW15SkVvOHRvd19+fjM5Mzg0OTk4NzF+MH5jaWIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>Ceramic Storage Connister-3Pcs</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,999</h3>
+                    <h4>flat 31% OFF</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_child">
+            <div>
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2MzU2XC9Vbmtub3duX25fM19PMUNOMDE2VDFjeUwxVXBqVFZZdTlQRF9+fjMwNDM3OTI1Njd+MH5jaWIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>Fruit Vegetable Storage Box Container</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,999</h3>
+                    <h4>flat 31% OFF</h4>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_child">
+            <div>
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2MzQxXC9HcmVlbl9uXzJfTzFDTjAxQXI3TjJTMjJ6NFFDZmZ3RW1ffn4xNjI0NTg3MTkwfjB+Y2liLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Kitchen Storage Sealing Box</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,999</h3>
+                    <h4>flat 31% OFF</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_child">
+            <div>
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2MzAwXC9Jdm9yeV9uXzNfOTIxMDU5NzIyM180ODg4OTQzNTguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+                <h3>Gramophone Decor</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,999</h3>
+                    <h4>flat 31% OFF</h4>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_child">
+            <div>
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2MjkzXC9Vbmtub3duX25fNF80NzIwODI4MjY3XzQ4ODg5NDM1OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
+                <h3>Matel Hanging Glass Planter-3Pcs</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,999</h3>
+                    <h4>flat 31% OFF</h4>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_child">
+            <div>
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2MzI3XC9uX1NURF8yXzkyNDQ2MzE5MjBfNTEyNzAzNzYwLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Ceramic Minimalist Animal Ornaments</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,999</h3>
+                    <h4>flat 31% OFF</h4>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_child">
+            <div>
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2MjA5XC9MaW1lX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>GOT Dracry Dragon Flame Model Figure</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,999</h3>
+                    <h4>flat 31% OFF</h4>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_child">
+            <div>
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2MTY3XC9HZW1fbl8yX08xQ04wMXkydWNQYjFvc2tHZDVkUnkzX35+NjAwMDAwMDAwNTI4MX4wfmNpYi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
+                <h3>Avenger End Game Ronin(Hawakeye) Action Figure</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,999</h3>
+                    <h4>flat 31% OFF</h4>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_child">
+            <div>
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2MDA1XC9CbHVlX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>A500 Helicopter</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,999</h3>
+                    <h4>flat 31% OFF</h4>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_child">
+            <div>
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1NzczXC9NaStKaW4rQ29mYStOb29kbGVzX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+                <h3>Mens Multi-time Zone Quartz</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,999</h3>
+                    <h4>flat 31% OFF</h4>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_child">
+            <div>
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2NTIzXC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
+                <h3>T10 Smart Watch With Earburds</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,999</h3>
+                    <h4>flat 31% OFF</h4>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_child">
+            <div>
+                <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1NzQ2XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
+                <h3>Mens Multi-time Zone Quartz</h3>
+                <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+                <div>
+                    <h3>₹5,999</h3>
+                    <h4>flat 31% OFF</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2NTIzXC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
+        <h3>T10 Smart Watch With Earburds</h3>
+        <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+        <div>
+            <h3>₹5,999</h3>
+            <h4>flat 31% OFF</h4>
+        </div>
+    </div>
+</div>
+<div class="bottom_child">
+    <div>
+        <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2NDkzXC9SZWRfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+        <h3>LOFREE Wireless Mouse</h3>
+        <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+        <div>
+            <h3>₹3,999</h3>
+            <h4>flat 31% OFF</h4>
+        </div>
+    </div>
+</div>
+<div class="bottom_child">
+    <div>
+        <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2NDA0XC9Vbmtub3duX25fM18xMjc0OTI1MjUxMl8yODAwMTM3NTcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+        <h3>Painting Stencils Ruler Drawing</h3>
+        <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+        <div>
+            <h3>₹1,999</h3>
+            <h4>flat 31% OFF</h4>
+        </div>
+    </div>
+</div>
+<div class="bottom_child">
+    <div>
+        <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2NDAxXC9QdXJwbGVfbl8xMV8xNDQyOTc5OTUxMF8xNTQ5MDA4NTMzLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+        <h3>Kids Wooden 3D Three-Dimensional</h3>
+        <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+        <div>
+            <h3>₹5,999</h3>
+            <h4>flat 31% OFF</h4>
+        </div>
+    </div>
+</div>
+<div class="bottom_child">
+    <div>
+        <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2Mzg2XC9Vbmtub3duX25fNl9PMUNOMDFlTTZNU3ExUk5PNlZhZDVwSV9+fjI4ODQ4NjIwOTl+MH5jaWIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+        <h3>4Pcs Cartoon Painting Templet Set</h3>
+        <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+        <div>
+            <h3>₹5,999</h3>
+            <h4>flat 31% OFF</h4>
+        </div>
+    </div>
+</div>
+<div class="bottom_child">
+    <div>
+        <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2Mzc1XC9Vbmtub3duX25fN18yMzQ5NDk0MDU4OF8yODAwMTM3NTcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+        <h3>6Pcs set color Jel Pen</h3>
+        <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+        <div>
+            <h3>₹5,999</h3>
+            <h4>flat 31% OFF</h4>
+        </div>
+    </div>
+</div>
+<div class="bottom_child">
+    <div>
+        <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2MzYxXC9Vbmtub3duX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+        <h3>3Pcs Ceramic Storage Jar</h3>
+        <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+        <div>
+            <h3>₹5,999</h3>
+            <h4>flat 31% OFF</h4>
+        </div>
+    </div>
+</div>
+<div class="bottom_child">
+    <div>
+        <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2MzYwXC9CbHVlX25fM19PMUNOMDFQWnJ2V3oyTW15SkVvOHRvd19+fjM5Mzg0OTk4NzF+MH5jaWIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+        <h3>Ceramic Storage Connister-3Pcs</h3>
+        <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+        <div>
+            <h3>₹5,999</h3>
+            <h4>flat 31% OFF</h4>
+        </div>
+    </div>
+</div>
+
+<div class="bottom_child">
+    <div>
+        <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2MzU2XC9Vbmtub3duX25fM19PMUNOMDE2VDFjeUwxVXBqVFZZdTlQRF9+fjMwNDM3OTI1Njd+MH5jaWIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+        <h3>Fruit Vegetable Storage Box Container</h3>
+        <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+        <div>
+            <h3>₹5,999</h3>
+            <h4>flat 31% OFF</h4>
+        </div>
+    </div>
+</div>
+<div class="bottom_child">
+    <div>
+        <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2MzQxXC9HcmVlbl9uXzJfTzFDTjAxQXI3TjJTMjJ6NFFDZmZ3RW1ffn4xNjI0NTg3MTkwfjB+Y2liLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+        <h3>Kitchen Storage Sealing Box</h3>
+        <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+        <div>
+            <h3>₹5,999</h3>
+            <h4>flat 31% OFF</h4>
+        </div>
+    </div>
+</div>
+
+<div class="bottom_child">
+    <div>
+        <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2MzAwXC9Jdm9yeV9uXzNfOTIxMDU5NzIyM180ODg4OTQzNTguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+        <h3>Gramophone Decor</h3>
+        <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+        <div>
+            <h3>₹5,999</h3>
+            <h4>flat 31% OFF</h4>
+        </div>
+    </div>
+</div>
+<div class="bottom_child">
+    <div>
+        <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2MjkzXC9Vbmtub3duX25fNF80NzIwODI4MjY3XzQ4ODg5NDM1OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
+        <h3>Matel Hanging Glass Planter-3Pcs</h3>
+        <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+        <div>
+            <h3>₹5,999</h3>
+            <h4>flat 31% OFF</h4>
+        </div>
+    </div>
+</div>
+<div class="bottom_child">
+    <div>
+        <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2MzI3XC9uX1NURF8yXzkyNDQ2MzE5MjBfNTEyNzAzNzYwLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+        <h3>Ceramic Minimalist Animal Ornaments</h3>
+        <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+        <div>
+            <h3>₹5,999</h3>
+            <h4>flat 31% OFF</h4>
+        </div>
+    </div>
+</div>
+<div class="bottom_child">
+    <div>
+        <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2MjA5XC9MaW1lX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+        <h3>GOT Dracry Dragon Flame Model Figure</h3>
+        <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+        <div>
+            <h3>₹5,999</h3>
+            <h4>flat 31% OFF</h4>
+        </div>
+    </div>
+</div>
+<div class="bottom_child">
+    <div>
+        <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2MTY3XC9HZW1fbl8yX08xQ04wMXkydWNQYjFvc2tHZDVkUnkzX35+NjAwMDAwMDAwNTI4MX4wfmNpYi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
+        <h3>Avenger End Game Ronin(Hawakeye) Action Figure</h3>
+        <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+        <div>
+            <h3>₹5,999</h3>
+            <h4>flat 31% OFF</h4>
+        </div>
+    </div>
+</div>
+<div class="bottom_child">
+    <div>
+        <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2MDA1XC9CbHVlX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+        <h3>A500 Helicopter</h3>
+        <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+        <div>
+            <h3>₹5,999</h3>
+            <h4>flat 31% OFF</h4>
+        </div>
+    </div>
+</div>
+<div class="bottom_child">
+    <div>
+        <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1NzczXC9NaStKaW4rQ29mYStOb29kbGVzX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
+        <h3>Mens Multi-time Zone Quartz</h3>
+        <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+        <div>
+            <h3>₹5,999</h3>
+            <h4>flat 31% OFF</h4>
+        </div>
+    </div>
+</div>
+<div class="bottom_child">
+    <div>
+        <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2NTIzXC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
+        <h3>T10 Smart Watch With Earburds</h3>
+        <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+        <div>
+            <h3>₹5,999</h3>
+            <h4>flat 31% OFF</h4>
+        </div>
+    </div>
+</div>
+<div class="bottom_child">
+    <div>
+        <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1NzQ2XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
+        <h3>Mens Multi-time Zone Quartz</h3>
+        <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+        <div>
+            <h3>₹5,999</h3>
+            <h4>flat 31% OFF</h4>
+        </div>
+    </div>
+</div>
+</div>
+
+
     <!-- Footer -->
         <footer class="footer">
             <div class="container">
@@ -126,7 +1290,7 @@
                     <div id="foot-col" class="footer-col">
                         <input type="text" name="" placeholder="Your Email Address" id=""><button><b>Subscribe</b></button>
                         <div class="social"><a href=""><i class="fa-brands fa-square-instagram"></i></a><a href=""><i class="fa-brands fa-youtube"></i></a><a href=""><i class="fa-brands fa-linkedin"></i></a><a href=""><i class="fa-solid fa-infinity"></i></a></div>
-
+                        <div class="paymethods"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjwAAABYCAMAAADGK93NAAACHFBMVEX////m5ubl5eUpOJUALofk5OT/mQEBneHNAQD39/fu7u719fXw8PACF2f7+/vs7OwAmOD/lQD/mgAmNZQAK4YAl+AeLpAAI4POAQAAHIHNAAn///v/ngDwiCABoOQAF4lOX6jo7PU8R5r9nivU2ucAI4vRJRbbQgBygbT77OItPJYBKX8bK48AJYTVNR76mBXUHwDygwhRueoFHosAEYEAAG/tcQCbrM2FlLgADYj09voAGnne6vKvt9SDvOLCzOKbxei/2+398OrdUCn7nTk+UaHjZRr/qg8CAF8DZaoVMoUAAIYbAE8CDmIBHnDQ1eijAAC3AABcbagBeLoxq+Y5AD/mYgCBi7aiqcO+xN795dDkkojcgoDebVndX0Honov00br7y6X/xon9s2v8qVRTY6DqubLmdE/8tHwADXH8zZjjfmb+rkT11s7yqYjsk3L0xbOBUWfiWh3FfFGJVFun2/Vmb52e1e+NweZFQY5aaasBQYhxTmz8wHWcW1j6pFa2N0HVj33XQzXaYVg5SYR7ADBqKUybABhJSHXheW1VBk/YZV7RZB//68vCj5ZmABrMsqlCLW7vlmHlrY2wRCD/2a1aADhyAACMPTbNgB/EZjdnBzC7ZVPNxtGNMEZJJ4CAg6EAADqreHBJLFKKACdRV4SOe4e2o6ZUACi6bypzT2MeGlulKUc3GlcOAEt0RDmeVymAID1YGF7pmIKbgYK7AAAgAElEQVR4nO2dj38T15XoZ8bIeH5kRrJk2Wa8tsaWEsnINVimEmMJYQcV4gSEVbNCpgTzKwWCN2xbMDXJZjchS5O22/Sl0KRs9uV105dNu9vdt/kH371zf45mJI1koA7rm0+wfD1nftz71bnnnHvuHUEgRZFEp0gKrQqJuEomNbJEquhBBpHTvHI6qVGJnMjkxJZyoScnZ3jlVFKjUzl6kOaVE71yUks5yUdODiLHGl3yyMleuZ3RWfTzs7+f1nK78Pg3+l8QHl85+nmH3A9qpF14duHZHbbE5wUe30ann3cIzKiRduHZafDsNM2zC88uPLvDlvA/AB7fRqefdwjMqJF24dlp8HTSPCHJKSHufiRcRc8r0yp2XiKntZFTyUHiU5UT2siJpIqDxyOnkYOMbctJUjdyPo3OIPDK7YzOEhRcDFXHRTVIFanRNVKj0Sp6kOyRU9rIyU9VzvswPnIaqdKenpyhC/Qg2tywyjRdjde20b3XCyb3zDqLfUHagk6OagcsleO1ZAA5ArokPjG5QN92fogJJCcFlgvJ5XqBlHqalELhbKlRFbgvcqBG71YrPbvO8g7NPkOlEmSolHeKXSOJ4ItvLsFimqpiiFJr+0RHxxmggMMC2UN+do3bHpLUxsLowsLo8LDzDy0Lw6OjC/srtYalO/f0dOyaZ9hZ9Pl3yP0gObEbuSZ4DN1cO/eD86+/DMr58z+4sK7Lih8Etr108dLlK8empo5duXzp0rphK08KHv3q8J6WJTYzP1nQnbPtwtPb/TxBN56DRzLUjTdeH2gqP3xjTROpnNNtSmb92mAkEunHBX6curhGD9qWJ2aY2VhreCA/12NlOfTtgadVZ/2l4HkqmkdRMx++2IwOLN85v0YPAhAYSzeOUW5YicxeWTPRQdvSPIZ8uC07EJ89VXDotwWenaZ5ngo8a2/6keOUkTfX8UGaqF0a9EEHKaCb6LBtwaMk5zvBsyd2KKlKu/C0vR/pGcKz1Bodp7yZQfe57qd1GD834WHbGbYkrTTaEZ49MzX7W6N5Wg1bvgFNH+8PHeU9L7MlfLw/WVXhqX1iUpxcO5e7G1d94zvt2QGD1wY4TL/WDh1n8Hq4PRc/pNfb2Mu0XG+ozOX2ud52XfW2jdfGVe+i0TUj4ylLtq3BAvreKTL4bFisgHrZSNJi4eM0VFTTqjbqtUSlUtlK58tJVVbZqdBBoIqezJY1UvjrkZO55Fw1Ki8nC3/TCR1YLghrYx3YgfhcWZI91+Nuynuf7psy78wEgGemYvo9TA/Xa9V4csuTPxk5Qbg4NTs75S7Hrlz0gFeYniSlkhQlsdw3jUu05uBIgLUb6cn4RDbulGwq1ZeoVxnoSEsk0wl6toTZhXYR/CPlIVF9cyQIPANvDXZEB9JzeamDdmmhldD0hP2HIPDsWbZ29vREh0Z3lFbm4TXOZ8Wt59DDDbFWX5SUVBqYJEYjh2v6UmlnIERDpV6ankhF+/gSzeWS7iG2kUrRs8WzNrufnu0huYO5Qweug0HYAc9/LEPh8bVrWthDaEiz7rX31InqaTwXE6PmxStN+ETW3PdTylEYJpIKaMlClvyeyzN4GtGcmxyHnoTtgicZ5Y9JVbcPT1B2XhqDJRA+U0T39ABPMheEnT0LpecCHtAgmWsufCLX3OfdoqzEJ01Ywyomygo5b90Hnb6+7FW3cV9L8X/NlbYLj64FsncGBvZ9D5YfBaInclnvHZ7Onvq3DR5Po7tTMuzMJZ6eKdd5kwyKVF6DLRmnNamQgc5rpnN9fiWbdt2PddhFWLy+XXiEW8HYIeW7AenpGZ6821Pfv3+/5x9YhoPC4w0b7CzNA+5H1DLH+qk9CdU2O2+eYhGdTIIaQ2EVUdK4LdjpyxVc95N3HwYGtW3CkznQHTz7ZoNZzeu9wlNb4Nk59YJfAQjFgto8pObJwcMZvvgQqX2jd4JHkvT630bot3KDh2eS6RnHPDbKh6nm2FLRaRst2OmbaPD3Yyea7OnoduE5H4yZF79DSrCBq3820yM8k7y9vN+XHVBOnjraDh7mbQnQHzVNwWSpQduFR2MurukUXTW6hEdrTkOtHo7+eAx9LSMP6f1ICkOlL5UEJ5K00gSFJ604rWbw9k48NZHNZlO5XBZUHjb4+8lP9LlLjlrMweBpfo6Ag9a+2eNj6L+AJjOy+/zg6TR1sRwInhdODR1RRakFBJJhV3Ipvkwm0o1kZ3hCneGR1LtDYa6Mr87NHV2kB7VvdHscCW0armFLFK3JaPYngw490Fkn51DT1MSNJxw9oxWomkmddexljRuNoqlEHsUPS7XJVCorCyo5lSEkss3w5EmnkIO46DOTo89Bqgg8LwWD53vHB8ec/wYBPYHGrf7BNf56DB56nwweUgM709rPj1ot2Tm5PB6eMw0mhwo5k1m/7ravYzPDueW0SDvL1QhMTvQMd9x9IjllcWhvUwEEzRF8VK8c1+i3w0hgVROFECnONWvZvuzbyCS4rNEvlsVGLeIbpbNNNfxolCUOlKKpaqM2qXFDbLWZHTAQaugO+JgULnwgEBculgWLEtRa/itXCWYzX7FDfCAQFy5PmVRxWilklIYDwXPi++N7hzaZHC705H5h6tjCcN4kneUA4pWjjcdppabGK4eb4YFlaE7r3OjqJobnrtA8MQrVR/ynDj1TDJ4yHWmi03YzKnELAcb87xR1vuHEqKKF+KGy7oEnWlFbgR5gYnTJk73Tatjiy4FguieSMbqeGJVkt7PVGp6h8b17x4sYAo8dZVV8I42x6yXZbza+q4nRI77w7A3Pye3lQKMbdzE8mx54ktC4if90EHwxIwa9HxbTSWG/2pom8ET75CbA+rK0Kb12lkrCz9HpaUpPdRvwbARkp4mk7waD54YPPB1SMiS1EAiek/ecb/tmK3iSe/zD1LFpy2hr1wSAZ86XHXA3i6rUodFtIrvogUfog30b/enUIPBUSSMVmTWTs/CTMXs5gWq4EHSKmHU+8FBzOdeoxcnxDaNXeCT7h8FoebGpBIOn/9hS9/DYrvGmtbP1yjjsg9WW8NBIYxNEC2lzm/CY4y3g2btqd4KnuIoPLXrhQbZM/O3Bwcg7pJGYKRyvYbe6RAep7JYHnmy6JTx2ghCTtdL0Y13rWfMsdczDQOW7s+6C46GeSb1m1bPGGcUB83nsSjBPHXeX2QKeBtFfM8v79+8fZXZULCFvc9iyKTzjoLjoKSrthy29iEe8cdMLD6Yi+3dj/VewlrEr1L453MDnYO5XKt9MWF/fBAkae+CpErnoln6WfI7XsHPYPTzGrZGBgZEDsAyMDKCfvmV2sLlANN69dPHSlRbcOH5Z5BoX2AikeUKGkdoTAJ4TSPHsHbdawFPAkcbherJaLpfqwwTJ2D1L3B48i1TRLMJye5WaQOFFWWrb6MIiPnbV9fzofpJEG/x4cApPLHND1DSJLVEF0pdLNh8FiZpu2L7wUD99oiQ0KDyTPcOjnQNg/D28q42BlX+AtWsebkbee//99w96ymDkGMprzhzzZefguiCsR26yOf+A8Khl18yWf3z5hReWyTfYbgFPIobHrCpq9CrRPbHl6jbhuU1Q2VxyGt1epfBsqu3hMTE84TkfeIQKwiIanZrdQDVMy+TyBB7mu2cxPJw7D8UntpI+8CRJIDF6WBEsKjBRNHqER31zYOT0ffjbxsgHZfjzooedlY9N02tWvzR4ZUlwzpWZjTgFDWPgf+fn8X+sCsKNyCxNzQg4bIXU/PUA8EA/vb3mwWFqoGewy50e9oMHJtp44EHJN02Nx3J2joaJnlFRzg5RJwAerWnRX7PmmcPwHHH+7orzAFcaoxL/ySDKCGOOVd80eY4idb+i03hwEwruyHH21a2yJ15DTg4sJVMX6HA4UVZ6jPMYLw+MPAAmlg7g+ZkFf344cv7chQsXfgCHr9fhpw8/AhRsfAgoAr+dew/+PHfuxZ9/8wuYc2FVq8Ivxy5fuvjwxjWgbS7fuDQ1dWk2An4efw3Q/06kf4PBEyzOY9ZdM1utrGU6cshYrileY+Ewdayi4kYnidGx5aTITV2YsmqA++CiyCG0JFh0NZ5koFXQDgDUwhGRnEWChuFFjW90WXMe2mBPbGLZIUdncEujYWEzVNnv3bBBhcLZxjXg5jsHlWldNGE7VYZiZOlQhg9P1S2TLnGGhXGYawiKXCMI5groNkQDF25pNCnkRgVaA5dUqyMDI186YaWNFWSm//yfkHbMjAyccz5lzkC8TZTALJg/HPiVLix9I3x8Fvz2+ds/+/XP/tcnqF1+OfYbgO9FM+PMiJppS9Av90ce0utx69FxEZsaDzaDLtQ6O1sn71EzddVED9P0fEoVmzgzWwK6nnyWwFMxBc0QDdNOltK1WrregA9o46xeTZTJR1vhG4+k/Soi9bbHbdToWpHAM1QEh6qiZhc3787NzR3ZtOCi+yIqsDNMPMKNFzUOKTJUWn1kZHn7JvTb5C3KxEQDZQdIBnOt4mmNzM54J0Zz0yRcqMIVbmxCLDppCYZKzxKv4S+I79DknL3F3JYKFMmjpKBrwsZvywL4PmY+JZMdb/0t+vnxCfjv2gpWIZn37jln/zX46mQOjo0d/OwzIvHOCUeLvkWVzRKwhh7S6wWd27raEZ4TVO8A28FErce0BLpYA+uvhTpudDWNzzuTgGmosp6/P399AZb5WN3Sa6/OwwK0kl447Hx8tW6TuwKnrY86lYeu2qJCLj6nO9eTDDpsOTFLXV6cg7NXe+H/c0VhMzzkFDCkiUVM/WrR4PqEwKPR8Ev2d6DrDIUmlcYTOh6aFU8aoWM0lXJNugeYNnWdQaBRMxvGGg2xSlmqWB3gaWUPZQA8oMutsrDxGvBuTWHjcT5fS9RAtzYAuFY6Uf/nLfC1/PybApC8cwdYpz//AzxL8Q5opHehYXz8X/Jna5U0YGn919B4taGrmCzBjxk4xeezr0/bWXV3DqqPyXPy1CvMPYZGhhseZMFQPXO94TS6ZMjE3VoAj6IJjeXr9Dqx0eXqNPptpizqdSw6X8XNB+Ap4aMXajbTM8huAc09R+CZg49dnOMC0OHwbayownfVkEoctTl4Ux54FGqXRP93xjV9Dp1yBI+WZtoorzFNUEp55h5yaQqBUaVSh5MQAmZjY6u7e3iAITxy3xKSBSH0hVAFN7jxqw9OP3jwCIxJpc/Bb6cfrDwAtZnTj8BX6vXT/wcA9XvQ9sLn/1J32ID0/Oenn3322b+C2nUAlFD9I7gX+Z9PQmW4FumPXCI3EBSesmtKygPPyZP3hrjQyhDyFbzwEPN43nKMYpFlmM3DxqrPuEKHM5U9xLwW9fIpQplO4KEW1B5LoXrGmZ4Cja4RdYLmHBb3uicv6B9va5J2m9rLfjuDGWz0mdgwJIVOTUThJBaCx+AiP1UOHqGamGjOQ53IYwhAe1AsKzqEwKBKbqLcMzwjK6DLq3Wh2hDqAI03Rl5/I7MEjZ2zUINsnB/5ErT1rRXokd269RX4/HsAVuY7jyFSOEB48+GSc8GvvgBgXDkFHvPa2Cwc7C4CeG50C0/DNTlxyg3OiROvfN8VlptDQ4sHHht76ntSQBfIsmkXCJMzV21BrzcnuuKjYwkVuOM4ShmbNPFd0fS00ZIckjcJPLedJjYX6Q0Bk4cFgZrLUBHAc5ROi/puK6cyz7ygGVUWDYQ6BMPDzbLLrrCCnq80pzE7WgUOgBL9izMRb0gsrwPHpHuC5zTQGSVgGOjyH0C3//A8iSb8ftnxGi6cAc7WuQc1Kv+2g9jjkqNYYLlMXJf/W4B14FbkK/1TfwYVl3sZts7y8Ow/eQIAA/4/efLkqeV7r4TD7oguGAp84RHtGAGgVC7l8+lJ6sKNAuy52bNYjFdBM1umJJP4YmxPFaVgmMRRW6gJoN3oqHR3cXHx7twqu505wE7LqYvxoijpZAi77QuPZFaIPojXNLXOUEoSeIwQS++ZbI5JWfXDbsM5tYUg4BJ+nIl4gxsS45Ue4ZEHRqAO+QrCF4LKAuqZZP0LcIGXTtx3ssyWk4J53nHnG9Vy43boD0DLXRihmmfwx8BlL0MJ84uGIDz8BSBo6Ur/7CEgehPmxHULzx3eUz917/usDO31dAwetZrhkTSRqJbY6KHrowsLzL4Z1oXqKFE0o4fj09HDLLCE5r2seapnoLmkWMOERMuQJJWFBJ3CobwoCOyPQ+HV1SEu8WfVliQN/3lo0R8elq8MfCKN5rlnazqBR2Mz6KDXPQFNpRB1LY+IJx0IOAvHmQ4DQ2KS5bJqvcGjAmcLIPIbqFg++Sn4B9xl6LenoeU7MvDBCchkHWDx+oOrwM75t0egrPwrOPmbI4/hoAYXHs/2CYL49WcLlpD5I0DuxtdfgD9c6YcM6VO9wMPPbMXuObNHuHi/zNjX8oGn3DwuUXaqgn2f+F2TeSc+XaBzp6N5MCwJNnb4ZmpOf+nE/ztUhUvJi6veG0FE3OWSNcJHiqbJK6LwEVUyVAzTkOm/oaXIRqpciE4hYNvFCWhyOiRb91tMmNzix65UA7rqWqkpfUw2FJUehhZvdbd1HLye+fI+4GUJfw81D9QuyS9ghGcFXGBp4L0DD/4EcADta57/92UY4nnxwIvv/RhaPwdGvgSWg6Bfu3ltHTzX2uzBEgwIgb+8+zX8kqwf/8SGoWeYx9ztilG+12PfbzkIOAWOBH4rP5vD1KxcB7fbOITZqSRl1OglZkyrzvJe/HtKAa2l57HtPex0lthqYAoDV4uBtagaDh2LpCZ8Vw4ZxFEbRytGvcuRmYrIJZnrlbNVcpDJJiyyZ1W/ZcxmnjOcswUdyJmTzI/Pl0A5e/ZsiV4pddYMujDdVWW+uQLGlwzk5tZvgSXcgA7TBpyz+vwfzLV12CVQxZihP0E6M2sZ4WMIz8DIwKESmpywoBrMwEmI0Avgn+MHD5GQufCw/9jYbKbdLXhrZIuHZ8GT7un+qm+aLU5l1nwXLM+MFkyNBJJiy5apITnhDuYjZTkbAyQxetdLJrgjPObN3LfhqfUWFvHQEVs1ycTF3tsCaeHbxLwGNyuT/NVVZ5m9z4aWbFFeqs6GGjCYUu3CJYeVW+ySkWcjV7YO9A6bT4dSOVSyLB0xrfW0S4ZxYQWMWOvQHj4Hx6+PTzlOP+j/Ak4A+Oo+1Owbj+9jJqCnDqNDX76AwgMWggX883kC/OwfO4OMdyD1cOriu1PcxGiQXTKoWkDwtFU84Tm55S4ZfvDE5hNVXTSS2O0eLZFGD8k48xV46nAIEYUo5gW0Cxm0YjNVzWm8Rb80wvDqbVWRSKIPmvZ0Gt2w6UQYqCA5qEfVFvvzsOyKaB/t3WjVoHaNxTz1viQHD2+fcDNi2YIK5AqeEBBfohWlpV2Dn8PXHjJunU4Xq588SBQ3XvqPcrX45p/vJwW7cLWarOeLtmA1/unAiTTQxt+snLmfBw1bzHyaTybhAtPZ/zxVr8pq8dZHlapQ/OpqVfq4Vqyu9499faJmCdadfNW6NvXJ2DtdpmS4F/wNt4MnPKcbrVaFUk8dGDmojF4fTZRsFdi7OBYQc74OMjKRGtjIuaM7a6hIiBEek8c0jxZ0yZlV50KAdP3E6lEL7smnEJOmSBvdkPG4FYay2CQKLyot4NGLhz2dG9+SWWdWo1yft9gviJtkT53VJM3ONgeA3MVZdto9PGLmyzNnHo88OPPRysjjM2cejKw8fu3EByuPznzw5aMzZ1776PTAyIOP/vzarwZG9n350Z9PnHi8Ao7/txUAz+DY159+9KeP/qs/8pP/+O9PP3v06DcHHz36fwcH+8f+6o9/+u9f/O7Ro9/ByfV1RkowePiteWL32sAzdFf3SydF8BDtAuyaet3ZlTcPNWkIhssK6ArDaSoH/FZcBwOgwINh2qmaJMtTr+o4JYNOi44fccrdzdsOKwAeGnvmGl0j0/8Cmxbdu6i12hlMqXg6OlfSWGeyadH4lmOfCWVLaIKnzCUWNgxJblom6im5hib1AI+kvgWGICfzAv47An7s2wc/jqDf4aeBFXhE5ODB2dlZls4z1j82Njs7BmDpn3K2PxgjS3LG+mcHx/DnqUy3CfD8eDPzSmt4VkH7t95WjoSpYxXbNLk9aGAoBV+Bh4doGhgDclIyyG2M5u8TAympSQieML0DXQaFnt2QyMoIkhsL573oZAasK9Jp0ZbbymmeFQ7RSYPrzLNcGBHBU+krAIeYnAmc1+bM42jSEFn6aSt4Cmov8KBUQsQP4gUBw/2Ofu4DnLAyNoiW3nRKZI68o3WZw2zd5zz1GX9nKxweAhYGPF1LeBrY7B4umK4lNE4cDl1huM7kdDzKLTQwPNRbIxNi8yUzhDQP8bb3ziEjlTW6LzzmES77i02LtoTHaKSaujZb0LjOrLENMhoInng8laqUkhZ2GKz8NMMvW5Mlo9HW4nGO6g0eaen9YEnMP8KrRY87/wZLf++PZLrd0DLJG7pNnrqzOHN8dRUmOiiiJLaBh/jauc81SWqCB4MCpymQXMgkhtaCheARFcO9y8twDU3e68xeDs+ha7JGD5kEHmrzgJGM2NBHITwELrPlDvBicbpp3Eolec1TYdOiZcXpTBg0jKeylRocoOu1ST7MAwEza53gicKVqD3AIyqfBINn30t8+V4weq7YUpfDlmt3lWWXpx6+i9JibO75WsGTIGHAqhceMjAuwAlBoD0Ms0yChDMChkeSXYkhTmgZw0Nd7yNo7oI1uqSwv6EqiebvIGeL5qCqbnh4281sWhKc3TIlrjPZzl8p1JkWtrCj0RRcnh7n0cumFclIvsoowW56bgIWmsQRnU72tqurZHe5RwYsB4KtVo+sd9pKF1cxV73EB/eWXU7xUWa7kP1B+ZWfLnhwDj2cJG/K9WHJGrFRhx7Tyr9KZiumCTwh0zXFdr2BGgs23l3qejsDJ9/oBluGfNdpZpWGCFGmD1nwdxQbqDRRjsveM+vucSvXIBl9MHvPos5YtGJDObPRvHcBp1GylmZodc7ELpcbjTL4pwpKOUlt81QZJUk6t0BT4LgXt7TKMtQCqh6+/HWw1cbvwBw+v2xBz02RLEOaaIy6nh+1xhWfh/FmJzrXM1/dQ4YmTyOoVerF70+k84X0PTqZNrMlkPvUktxuC8NpckXQWUfw/QyJ7Hqk0U02s7U6t3l7bpU9wGoRPB2ZFk1qjhzlTlC4Jc7upECY90e/ICGDm9nagio4pHg2vuD0DIxk8X47XYqsOu/doZlBKeBlKo28ZfisR++Q3xxwwfGLB79LyvGAi40vZuD7tnzWozevDyf5zWaCGy1OuZyt1XZyXF40/CVJJiDSuNFdcuwasYXRhWEGyUJBZ43HHRWnkU4jxHJQ2fVYcvimOwbE3f6cGhKXyLSojeQ4eIhWBvBYLpsnV6AHgaFZ4Wa2Co620+qtXKls1onzlri17pQLw8mPoyeDK08LpXIBrh7tcn+etYADV+Q49seDGTyR9aVra13uz6PyW/PEmuFpM6HqmhjVyOC3UMCN7pKr8kFs50L4Zw6mYBA7qkHn5ffTFbyg8WjiF/Oo8C3ARrdbTZqG50xgPBPubMGzuRN7Dr3G4RCdYA8rS5Jad89wGqKV8A8ARlMJdNvMhErRxaTIrjFozCh6WBCBDm6UQHt2u63chYCqZ9aJ5gT1tC4LQkbvEh6L35pngU8ZBDZoUHhAE+PB73rJDx6h7t62bmaafKgq7H0WFk5M3TNaZ+OLoRRpxqkfPN65C+JsHdGASUS4awuPawem+JbMOwUGQyVVRvBMp3zoiefiOLOcBRX7cuUmeIosNdUqlur1ci/w2B8Go+evnXIwGD03sX3bDTxG9RQHzzDfEeHN4PBQy+lQ0hceOz3PLhM7VGvgT8uWwTQP2ShhpqJzjactutIIPfDwAxe0fIiiGgLmtUFmtnDucyt4yq9ms9l41im5hmuBojWJN+iOx3NoYZ9WdrZw4gCKZlOpRCGpofup54hANsEaCUGgVlL4b4fzQiFpFUpK97uhSksBd5aD5aWAqqeXrXTdW/Ps5/sBLmoJCo9dmx+FZX6ZNHqTnJ5fRvlgseHR+yXQW+jwtM0Cj3oFh5b3Vw0uEKhu4j3BhshWTs3r0YGDRfgaP2Kb+PC9KowhDnGireERErUt8J9T0oYrHJG8mqDFduARFc2q5mvRCVJy8a1CWdMwBAo7PpFnk0Ao8CDX2d/AuJVPOo5m17u6ZoLu0jPwUjBjuX+dnLwreHgHOXbPpf+7gEdJ5p1SarWaFAxK+UQO8BJNw3XddgMf7kxeo84iS93n8ya/rZyoHEVlkRjRns0M7MW5cWfRzVHonS8ehcvZjxZhvxShHChErhU8qOvg3IesNsWy0A6IbgiACuGqNM3UXPdDtk00teZYjqQyMSGkom2eengjTqc33pDyfqBBKzLFXs/VFTzV5Xn6FZp3wbMaHB5REnVVZ+3itw+zIbt7AdyViraRQ51Vxkb1AvDS3XsSolCHa77MDQ84E3x3pimrrNF1JzJlNMmxi/vtkYiz+NzwNL/OAMcPXbuzSk3345cRKHrkvEujg79OaembIOx8qK5PBXhxyc0l715/wbwt7vUu1lEenjm9m/equxKsfDfxxnWuzmLwkMVjsWEL2tB8Z3kSpTzwqJLhLIDv0FnuNFQW5yF/96wPb7cFXuf9A0PuJdXdyHVcxy7Jtzp67AduAc2WudmJnsg1g5+C6CbOw69jl49w7MA1Uj5yileOHtRu38FOnbWFbS+Y0/z0Oivgy9rIUUxW8gDr9/4vr5bwygXTLm3kSMPrHczm88gG1i+2f2vSsV8KnHZhjRD8HaNYjo+ZhDdlTrt01+jdvqwtpNMEsPrT7axgzxFkrulJviayR7k3Xm6Nznu38EGasnalvxU+kcgNB7GeXxPJybmc3tsaJ0db+Km8X0KzsJcOfPen21nbhcRFFLQAAAJySURBVGdHvWNU1W+97v/erdfX6UEAAnvtnVm/F9RGpi7iZtjWO0aRnM3PqQ8ljWcFj2JXhknQsFluF55mOX6Db0Pd+Oa9JuPnwHtvbWiudFJJVJbWb07xGxKCjzffydB3tD0BeIr8Luursvis4NFKh2accqjukduFp1nOtTu8ZNjy+hvfvIwAGjnwo7fe2FjSDB+32s6s3bh2rN/ZFWzs3csPf6lYYtBtVHChjefriW3OsWIZzw4e644Tn7ta0D1yzwk8PbzeqdVzNL1aAFY7D+PoERUuXpM6QGDbttYEQWt4ghnMTE6Hy7mgj/yshi1DR+8iaRfLeTKdRZ//OdE8zZ0Zkpo7xQ8CsrHfE9U8VA6d/ZnBQ1aA+cg9J5rnmcHj05keObEbue7h8cg9ZXieWWd5V4y2e5luuxWcfq/qfqIv020hxwUQRVKleuVojftNxEjOs/Kz4xuMtyXnfYOx33vVt/vm46ffWTIp3Gu1SVFwhaKSGtV70F9MTt2unErl2t3Ut0XuL9BZFDI6VHrntjoAS2q61S7koKcq16OWeAJypFnaahetTaO31S47orPo5x3ywty2Q2wPck/FHgpk11A5OYjct/ztxjvjhbmokXbh2Wnw+MrRzzvkflAj7cKzC8/usCU+L/D4Njr9vENgRo20C89Og2enaZ5deJ4neHaC9/ek5Z6Vqy555EjN8+yqsziQggsXByKFi1eR8lTlZI+c9uTk1DZyPif3yj2jRtj5cjtoesKVp9ybXM/TEx653ekJfzl3o3uH5t2J0fZyuxOjVI4+/3OTzyM+ZXiegDH9bYPnf2w+T8vO3NU82+2s/w/NHWOYZQit0gAAAABJRU5ErkJggg==" alt=""></div>
                     </div>
                 </div>
             </div>
@@ -156,7 +1320,50 @@
 </body>
 </html>
 <script>
-    let arr=""
-    let url ="https://636a74ebb10125b78fdbef78.mockapi.io/products";
-    async
+    let array=[
+        {
+            img_url:"https://d64lkarmo2mrq.cloudfront.net/img/home/international-banner-02.webp"
+        },
+        {
+            img_url:"https://d64lkarmo2mrq.cloudfront.net/img/home/watch-offer-banner.webp"
+        },
+        {
+            img_url:"https://d64lkarmo2mrq.cloudfront.net/img/home/turkey-fashion.webp"
+        },
+        {
+            img_url:"https://d64lkarmo2mrq.cloudfront.net/img/home/prepaid-order-free-watch-banner.webp"
+        },
+
+        {
+            img_url:"https://d64lkarmo2mrq.cloudfront.net/img/home/34535_new_arrivals.webp"
+        },
+        {
+            img_url:"https://d64lkarmo2mrq.cloudfront.net/img/home/4544_500_off.webp"
+        },
+        {
+            img_url:"https://d64lkarmo2mrq.cloudfront.net/img/home/544545_best_selling.webp"
+        },
+        {
+            img_url:"https://d64lkarmo2mrq.cloudfront.net/img/home/new-global.webp"
+        },
+        {
+            img_url:"https://d64lkarmo2mrq.cloudfront.net/img/home/prepaid-order-free-watch-banner.webp"
+        }
+            ]
+
+    let count=0;
+
+    function displayImg(array){
+        document.querySelector('#slide').innerHTML='';
+        count++
+        for(let i=count; i<=count; i++){
+            if(count>array.length-1){
+                count=1;
+                // clearInterval(start);
+            }
+            break;
+        }
+    }
+
+displayImg()
 </script>
