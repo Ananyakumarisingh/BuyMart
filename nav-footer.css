@@ -10,6 +10,7 @@
     left: 0;
     overflow: hidden;
     z-index: 999;
+    width: 100%;
 }
 .cont{
     width: 100vw;

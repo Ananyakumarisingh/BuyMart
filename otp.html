@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./nav-footer.css">
+    <link rel="icon" href="./download.png" type="image/x-icon">
+    <title>BuyMart.com | OTP </title>
+    <style>
+        #otp_box{
+            width: 400px;
+            height: 200px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin: auto;
+            margin-top: 50px;
+            padding: 30px;
+
+        }
+        #otp{
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-left: 95px;
+        }
+        button{
+            font-size: 16px;
+            padding: 3px 20px ;
+            margin-left:150px ;
+        }
+    </style>
+</head>
+<body>
+   
+    <div id="otp_box">
+        <h2>Please enter the OTP received on your mobile number</h2><br>
+        <p>A One Time Password has been send to *******025</p><br>
+    <form>
+        <input type="number" placeholder="Enter the OTP*" id="otp"><br>
+        
+        <button>Submit</button>
+    </form>
+    </div>
+    
+    </body>
+    </html>
+    <script>
+        document.querySelector('form').addEventListener('submit', ()=>{
+        let form = document.querySelector('form');
+        if(form.otp.value == '123456'){
+            alert('Payment Successfull 😀')
+        }
+        else alert('😥 Incorrect otp')
+    })
+    </script>
