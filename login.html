@@ -90,16 +90,26 @@
     <div class="cont"></div>
     <div class="form">
         <h2>Login or Create Account</h2>
+<<<<<<< HEAD
         <button><a href="https://www.facebook.com/facebook/"><i class="fa-brands fa-facebook-f"></i> Login with Facebook</a></button><button href="./signup.html"><i class="fa-brands fa-google"></i> Sign in</button>
+=======
+        <button><a href="https://www.facebook.com/facebook/"><i class="fa-brands fa-facebook-f"></i> Login with Facebook</a></button><button><i class="fa-brands fa-google"></i> Sign in</button>
+>>>>>>> dd932a6bf19195cfdbaba3b3cb097b2332f0ff65
         <br><br>
         <hr>
         <br>
         <form>
             <div class="goto">
                 <h3>Email Address</h3>
+<<<<<<< HEAD
                 <input type="email" placeholder="Email Address" id="email" required><br><br>
                 <h3>Password</h3>
                 <input type="password" placeholder="Password" id="password" required><br><br>
+=======
+                <input type="email" placeholder="Email Address" id="email"><br><br>
+                <h3>Password</h3>
+                <input type="password" placeholder="Password" id="password"><br><br>
+>>>>>>> dd932a6bf19195cfdbaba3b3cb097b2332f0ff65
                 <button id="login">Login</button><br><br>
                 <h5>Forgot Password?</h5><br>
                 <p>New to BuyMart?</p><br>
@@ -163,14 +173,20 @@
 </body>
 </html>
 <script>
+<<<<<<< HEAD
     
     let form = document.querySelector("form");
     let LSarr=JSON.parse(localStorage.getItem("credentials"))||{};
+=======
+    let form = document.querySelector("form");
+    let LSarr=JSON.parse(localStorage.getItem("login"))||[];
+>>>>>>> dd932a6bf19195cfdbaba3b3cb097b2332f0ff65
     form.addEventListener("submit",function(e){
         e.preventDefault();
         let flag = false;
         let gmail = form.email.value;
         let passWord= form.password.value;
+<<<<<<< HEAD
         
             if(LSarr.email==gmail && LSarr.password==passWord){
                 flag = true;
@@ -178,13 +194,29 @@
     if(flag==true)
     {
         alert('login successful. ✅')
+=======
+        LSarr.forEach(element => {
+            if(gmail=="" || passWord == ""){
+                alert("❗ Please fill all the details.")
+            }
+            if(element.gmail==email && element.password==passWord){
+                flag = true;
+            }
+        });
+    if(flag==true)
+    {
+        alert('login successful.')
+>>>>>>> dd932a6bf19195cfdbaba3b3cb097b2332f0ff65
         window.location.assign("index.html");
     }else{
         alert('wrong credentials.')
     }
         
 });
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> dd932a6bf19195cfdbaba3b3cb097b2332f0ff65
 </script>
