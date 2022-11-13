@@ -7,28 +7,69 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./nav-footer.css">
     <link rel="icon" href="./download.png" type="image/x-icon">
-    <title></title>
+    <title>LOG-IN</title>
     <style>
     .footer{
         height: 200px;
+        margin-top: 190px;
     }
     #m_subfooter{
-        margin-top:80px ;
+        margin-top:90px ;
         text-align: right;
+    }
+    .form{
+        width:320px;
+        padding: 30px;
+        height: auto;
+        margin: auto;
+        margin-top: 30px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .form>button{
+        color: white;
+        background-color: rgb(5, 72, 149);
+        margin-right: 20px;
+        padding: 6px 10px;
+        border: 0px;
+        border-radius: 7px;
+        margin-top: 7px;
+    }
+    .form>button:nth-child(3){
+        background-color: rgb(0, 145, 255);
+    }
+    a{
+        color: white;
+    }
+    input{
+        padding: 5px 6px;
+        width: 96%;
+    }
+    .goto button{
+        padding: 6px 6px;
+        width: 100%;
+        font-size: 17px;
+    }
+    h5,h5~p{
+        text-align: center;
+    }
+    #login{
+        background-color: rgb(255, 145, 0);
+        color: white;
+        border: 0px;
     }
     </style>
 </head>
 <body>
     <!-- Nav Bar -->
     <div class="header">
-        <p><span id="coupon">Up to Rs.500 Off on Prepaid Purchases - Use Coupon <span style="color:#bc522f;font-weight:bolder">"PREPAID"</span></span></p>
+        <p><span id="coupon">Up to Rs.200 Off on Prepaid Purchases - Use Coupon <span style="color:#bc522f;font-weight:bolder">"PREPAID200"</span></span></p>
         <div id="top">
             <div id="pr_logo">
-                <img  id="logo" src="./Handwritten.png" alt="">
+                <img  id="logo" href="/index.html" src="./Handwritten.png" alt="">
                 <input type="text" placeholder="Search" herc="">
                 <div id="accn"><a href="">Seller's Corner </a>|<a href=""> Feedback </a>|<a href=""> Blog </a>|<a href=""> Delivery Info </a></div>
                 <div class="log">
-                    <div><a href=""> LOGIN </a> / <a href=""> SIGN UP </a></div>
+                    <div><a href=""> LOGIN </a> / <a href="./signup.html"> SIGN UP </a></div>
                     <div><h3>WELCOME GUEST</h3></div>
                 </div>
                 <a href="./cart.html"><img class="cart" src="https://www.bing.com/th?id=OIP.3eKgGISBoiSTPa5lrxZErgHaFL&w=298&h=209&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt=""></a>
@@ -46,9 +87,26 @@
             </div>
         </div>
     </div>
-
-    
-
+    <div class="cont"></div>
+    <div class="form">
+        <h2>Login or Create Account</h2>
+        <button><a href="https://www.facebook.com/facebook/"><i class="fa-brands fa-facebook-f"></i> Login with Facebook</a></button><button href="./signup.html"><i class="fa-brands fa-google"></i> Sign in</button>
+        <br><br>
+        <hr>
+        <br>
+        <form>
+            <div class="goto">
+                <h3>Email Address</h3>
+                <input type="email" placeholder="Email Address" id="email" required><br><br>
+                <h3>Password</h3>
+                <input type="password" placeholder="Password" id="password" required><br><br>
+                <button id="login">Login</button><br><br>
+                <h5>Forgot Password?</h5><br>
+                <p>New to BuyMart?</p><br>
+                <a href="./signup.html"></a><button>Sign Up</button></a>
+            </div>
+        </form>
+    </div>
     <!-- footer -->
 <footer class="footer">
     <div class="container">
@@ -96,12 +154,37 @@
             </div>
         </div>
     </div>
-    <div id="bot" >The company, product and services names used on this website are for identification purposes only. All trademarks and registered trademarks are the property of their respective owners.</div>
     <div id="m_subfooter">
         Prodigious Digital Solution © 2022
     </div>
 </footer>
-</div>
+
 
 </body>
 </html>
+<script>
+    
+    let form = document.querySelector("form");
+    let LSarr=JSON.parse(localStorage.getItem("credentials"))||{};
+    form.addEventListener("submit",function(e){
+        e.preventDefault();
+        let flag = false;
+        let gmail = form.email.value;
+        let passWord= form.password.value;
+        
+            if(LSarr.email==gmail && LSarr.password==passWord){
+                flag = true;
+            }
+    if(flag==true)
+    {
+        alert('login successful. ✅')
+        window.location.assign("index.html");
+    }else{
+        alert('wrong credentials.')
+    }
+        
+});
+
+
+
+</script>

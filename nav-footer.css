@@ -10,14 +10,21 @@
     left: 0;
     overflow: hidden;
     z-index: 999;
+    width: 100%;
 }
 .cont{
     width: 100vw;
-    height: 100px;
+    height: 150px;
     margin-top: 30px;
 }
 .header p,.header a{
     color: black;
+}
+.header p:hover,:focus,.header a:hover,:focus{
+    color: #333;
+    border-top: #333;
+    text-decoration: underline;
+    border-bottom: #24262b;
 }
 .header>img:first-child{
     width: 20%;
@@ -82,6 +89,10 @@ footer a:hover{
     padding: 7px;
     margin-bottom: 2px;
 }
+#foot-col button:hover{
+    background-color: orange;
+    cursor:pointer;
+}
 #m_subfooter{
     color: rgb(88, 88, 87);
     margin-top: 5px;
@@ -108,7 +119,7 @@ footer a:hover{
     height: 25px;
     margin-top: 55px;
     margin-left: 40px;
-    width: 250px;
+    width: 251px;
 }
 #top{
     display: flex;

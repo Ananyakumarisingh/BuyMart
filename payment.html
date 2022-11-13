@@ -6,21 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./nav-footer.css">
-    <title></title>
+    <link rel="icon" href="./download.png" type="image/x-icon">
+    <title>BuyMart.com | Payment: Login Source</title>
     <style>
-    .footer{
-        height: 200px;
-    }
-    #m_subfooter{
-        margin-top:80px ;
-        text-align: right;
-    }
+        .footer{
+            height: 200px;
+            margin-top: 10px;
+        }
+        #m_subfooter{
+            margin-top:80px ;
+            text-align: right;
+        }
+        #card{
+            width: 30%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 2.5%;
+            margin-bottom: 2.5%;
+            padding: 1.5% 0%;
+        }
+        input{
+            padding: 4px;
+            width: 60%;
+            margin-bottom: 15px;
+            text-align: center;
+            margin-left: 8px;
+        }
+        img{
+            width: 70%;
+        }
+        p{
+            padding-left: 30px;
+            font-size: 18px;
+        }
+        #pink{
+            cursor: pointer;
+            width: 70%;
+            text-align: center;
+            
+            padding: 10px;
+            background-color: rgb(229, 38, 69);
+            border: 0ch;
+            border-radius: 7px;
+            font-size: 18px;
+            margin: 4% 0px 15px 50px;
+            padding:3%;
+            color: white;
+        }
+        #bost{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            margin-bottom: 10px;
+            
+        }
+        h2{
+            text-align: center;
+            padding: 8px 0px;
+            margin-top: 0%;
+            padding-left: 0px;
+            margin-bottom: 3%;
+        }
+        #bag{
+            padding-left: 30px;
+        }
+        #expiry{
+            width: 70px;
+            height: 15px;
+            margin-left: 2%;
+            margin-bottom: 0%;
+        }
+        #cvv{
+            width: 70px;
+        }
     </style>
 </head>
 <body>
     <!-- Nav Bar -->
     <div class="header">
-        <p><span id="coupon">Up to Rs.500 Off on Prepaid Purchases - Use Coupon <span style="color:#bc522f;font-weight:bolder">"PREPAID"</span></span></p>
+        <p><span id="coupon">Up to Rs.200 Off on Prepaid Purchases - Use Coupon <span style="color:#bc522f;font-weight:bolder">"PREPAID200"</span></span></p>
         <div id="top">
             <div id="pr_logo">
                 <img  id="logo" src="./Handwritten.png" alt="">
@@ -45,9 +109,36 @@
             </div>
         </div>
     </div>
-
-
-    
+    <div class="cont"></div>
+    <div id="card" >
+        <h2>Payment Details</h2>
+        <div id="bost">
+            <p>We accept</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk7cbcw6d03fwJTd9YmjrBVCnHbNfETyc8X8FZd50PucnYk3k2N8_8cI1NL4Z8F5PlJ24&usqp=CAU" alt="">
+        </div>
+        <form>
+            <div id="bag">
+                Card Holder Name
+                <input id="name" type="text" placeholder="Card Holder Name">
+                Card Number
+                <input id="cnumber" type="tel" maxlength="16">
+                <br>
+                
+                
+                <div>
+                    <label>Expiry Date</label><input id="expdate" type="text"  maxlength="5" placeholder="MM/YY">
+                </div>
+                <br>
+                CVV
+                <input id="cvv" type="tel" maxlength="3" placeholder="CVV">
+                <br>
+                
+                <br>
+                <button id="pink">Pay Now</button>
+                <!-- <input type="submit" value="Pay Now"> -->
+            </div>
+        </form>
+    </div>
 <footer class="footer">
     <div class="container">
         <div class="row">
@@ -94,7 +185,6 @@
             </div>
         </div>
     </div>
-    <div id="bot" >The company, product and services names used on this website are for identification purposes only. All trademarks and registered trademarks are the property of their respective owners.</div>
     <div id="m_subfooter">
         Prodigious Digital Solution © 2022
     </div>
@@ -103,3 +193,35 @@
 
 </body>
 </html>
+<script>
+    document.querySelector('form').addEventListener('submit', (e) => {
+        e.preventDefault()
+        let form = document.querySelector('form');
+        let name = form.name.value;
+        let number = form.cnumber.value;
+        let cvv = form.cvv.value;
+        let expdate = form.expdate.value;
+        let flag = false;
+        if (number == '9876543210123456') {
+            flag = true;
+        } else {
+            alert('😥 Invalid Card Number')
+            flag = false;
+        }
+        if (cvv == '123' && flag) {
+            flag = true;
+        } else {
+            alert('😥 Invalid CVV Number')
+            flag = false;
+        }
+        if (expdate == '06/24' && flag) {
+            flag = true;
+        } else {
+            flag = false;
+            alert('😥 Invalid Expiry Date Number')
+        }
+        if(flag){
+            window.location.href = 'otp.html'
+        }
+    })
+</script>

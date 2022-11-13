@@ -7,27 +7,82 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./nav-footer.css">
     <link rel="icon" href="./download.png" type="image/x-icon">
-    <title></title>
+    <title>SIGN-UP</title>
     <style>
     .footer{
-        height: 200px;
+        height: auto;
+        margin-top: 150px;
     }
     #m_subfooter{
-        margin-top:85px ;
+        margin-top:85px;
         text-align: right;
     }
     .signup{
-        border: 1px solid red;
+        border-top: 1px solid rgb(77, 77, 77);
     }
+    .form{
+        width: 320px;
+        padding: 30px;
+        height: auto;
+        margin: auto;
+        margin-top: 3px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .header{
+        width: 100%;
+        height: 156.3px;
+    }
+    .form>button{
+        color: white;
+        background-color: rgb(5, 72, 149);
+        margin-right: 20px;
+        padding: 6px 10px;
+        border: 0px;
+        border-radius: 7px;
+        margin-top: 7px;
+    }
+    .form>button:nth-child(3){
+        background-color: rgb(0, 145, 255);
+    }
+    a{
+        color: white;
+    }
+    input{
+        padding: 5px 6px;
+        width: 96%;
+    }
+    .goto button{
+        padding: 6px 6px;
+        width: 100%;
+        font-size: 17px;
+    }
+    p,p~p{
+        text-align: center;
+    }
+    p span{
+        color: blue;
+    }
+    #login{
+        background-color: rgb(255, 145, 0);
+        color: white;
+        border: 0px;
+    }
+    .left{
+        text-align: left;
+    }
+    .sup{
+        font-size: 12px;
+    }
+    
     </style>
 </head>
 <body>
     <!-- Nav Bar -->
     <div class="header">
-        <p><span id="coupon">Up to Rs.500 Off on Prepaid Purchases - Use Coupon <span style="color:#bc522f;font-weight:bolder">"PREPAID"</span></span></p>
+        <p><span id="coupon">Up to Rs.200 Off on Prepaid Purchases - Use Coupon <span style="color:#bc522f;font-weight:bolder">"PREPAID200"</span></span></p>
         <div id="top">
             <div id="pr_logo">
-                <img  id="logo" src="./Handwritten.png" alt="">
+                <img  id="logo" href="/index.html" src="./Handwritten.png" alt="">
                 <input type="text" placeholder="Search" herc="">
                 <div id="accn"><a href="">Seller's Corner </a>|<a href=""> Feedback </a>|<a href=""> Blog </a>|<a href=""> Delivery Info </a></div>
                 <div class="log">
@@ -41,7 +96,7 @@
         <div class="homeul">
             <div class="nav-b">
             <div><ul><a href=""><li>Categories</a><span><i class="fa-sharp fa-solid fa-caret-down"></i></span></li></div>
-            <div><li><a href="./flashsale.html">Flash Sale<span></span></a></li></div>    
+            <div><li><a href="">Flash Sale<span></span></a></li></div>    
             <div><li><a href="">Best Deals<span></span></a> </li></div>    
             <div><li><a href="">Shop by Brand<span></span></a></li></div>
             <div><li><a href="">Trading<span></span></a></li></div>
@@ -49,16 +104,28 @@
             </div>
         </div>
     </div>
-
-    <div class="signup">
-        <div class="sign_bd">
-            <h1>Login or Create Account</h1>
-            <button><i class="fa-brands fa-facebook-f"></i>Facebook</button><button><i class="fa-brands fa-google"></i>Sign in</button>
-        </div>
+    <div class="cont"></div>
+    <div class="form">
+        <h2>Login or Create Account</h2>
+        <button><a href="https://www.facebook.com/facebook/"><i class="fa-brands fa-facebook-f"></i> Login with Facebook</a></button><button><i class="fa-brands fa-google"></i> Sign in</button>
+        <br><br>
+        <hr>
+        <br>
+        <form>
+            <div class="goto">
+                <p class="left"><b>Email Address</b></p>
+                <input type="email" placeholder="Email Address" id="email"><br><br>
+                <p class="left"><b>Password</b></p>
+                <input type="password" placeholder="Password" id="password" required><br><br>
+                <p class="left"><b>Confirm Password</b></p>
+                <input type="password" placeholder="Password Confirm" id="passwordC" required><br><br>
+                <button id="login">Sign Up</button><br>
+                <p class="sup">By signing up, you agree to our <span>Terms of Use & Privacy Policy</span></p><br>
+                <p>Already have an account?</p><br>
+                <a href="./login.html"></a><button>Login</button></a>
+            </div>
+        </form>
     </div>
-
-
-
     <!-- footer -->
 <footer class="footer">
     <div class="container">
@@ -114,3 +181,24 @@
 
 </body>
 </html>
+<script>
+    let form = document.querySelector('form');
+    form.addEventListener('submit',function(e){
+        e.preventDefault();
+        localStorage.setItem("credentials", JSON.stringify({}));
+        let obj = {
+            email : form.email.value,
+            password: form.password.value,
+            cPassword: form.passwordC.value
+        }
+        if(form.password.value!=form.passwordC.value){
+            alert("❗ Please fill the same password.")
+        }
+        else{
+            localStorage.setItem("credentials", JSON.stringify(obj));
+            alert("Sign up suceessfully. ✅");
+            window.location.assign("login.html");
+        }
+
+    })
+</script>

@@ -7,45 +7,202 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./nav-footer.css">
     <link rel="icon" href="./download.png" type="image/x-icon">
-    <title>My Cart</title>
+    <title>Shopping Cart | BuyMart.com</title>
     <style>
+        
+    #cart{
+            display: flex;
+            width: 94%; 
+            margin: auto;
+            flex-direction: row;
+            justify-content: space-evenly;
+    }
+    #pay{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 30px;
+        width: 25%;height: 400px;
+    }
+    .cont{
+        margin-top: 50px;
+    }
     .footer{
         height: 200px;
+        margin-top: 70px;
     }
     #m_subfooter{
         margin-top:80px ;
         text-align: right;
+    }
+    #cart_item{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+        height: auto;box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        margin: auto;
+        padding: 20px;
+    }
+    #cart_item>div{
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+        width: 150px;
+        height: 300px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .green{
+        color: green;
+    }
+    img{
+        width: 150px;
+        height: 120px;
+    }
+    h1{
+        color: #c3461c;
+    }
+    #buttonRe{
+        background-color:crimson;
+            color: white;
+            width: 50%;
+            padding: 8px 14px;
+            border: none;
+            margin-left: 24%;
+            margin-top: 10px;
+            border-radius: 5px;
+    }
+    button{
+            color: white;
+            width: 50%;
+            padding: 8px 14px;
+            border: none;
+            margin-left: 24%;
+            margin-top: 10px;
+            border-radius: 5px;
+    }
+    button:hover{
+        background-color: rgb(5, 182, 5);
+        
+    }
+    #butt{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    h3{
+        margin-top: 15px;
+    }
+    /* #total{
+        margin-bottom: 150px;
+        margin-right: 150px;
+    } */
+    #bot{
+        margin: 40px;
+        text-align: center;
+    }
+    .p{
+        font-size: 20px;
+    }
+    #pay div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .size{
+        font-size: 18px;
+    }
+    .orange{
+        background-color:rgb(255, 145, 0); 
+        width: 34%;
+        margin-left: 92px;
+        font-size: 16px;
+    }
+    input{
+        padding: 5px;
+        width: 30%;
+        font-size: 16px;
+    }
+    .orange:hover{
+        background-color: orange;
+    }
+    button{
+        text-decoration: none;
+    }
+    #divInc{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #divInc>button{
+        background-color: green;
+        cursor: pointer;
+        margin-left: -5px;
+        width: 25px;
+    }
+    #divInc>button:hover,#divInc>button:focus{
+        background-color: rgb(4, 186, 4);
+        
+    }
+    #divInc h4{
+        margin-top: 10px;
+        /* margin-left: 23px; */
     }
     </style>
 </head>
 <body>
     <!-- Nav Bar -->
     <div class="header">
-        <p><span id="coupon">Up to Rs.500 Off on Prepaid Purchases - Use Coupon <span style="color:#bc522f;font-weight:bolder">"PREPAID"</span></span></p>
+        <p><span id="coupon">Up to Rs.200 Off on Prepaid Purchases - Use Coupon <span style="color:#bc522f;font-weight:bolder">"PREPAID200"</span></span></p>
         <div id="top">
             <div id="pr_logo">
-                <img  id="logo" src="./Handwritten.png" alt="">
+                <img  id="logo" href="index.html" src="./Handwritten.png" alt="">
                 <input type="text" placeholder="Search" herc="">
-                <div id="accn"><a href="">Seller's Corner </a>|<a href=""> Feedback </a>|<a href=""> Blog </a>|<a href=""> Delivery Info </a></div>
+                <div id="accn"><a href="">Seller's Corner </a>|<a href=""> Feedback </a>|<a href=""> Blog </a>|<a href="">Delivery Info</a></div>
                 <div class="log">
                     <div><a href=""> LOGIN </a> / <a href=""> SIGN UP </a></div>
                     <div><h3>WELCOME GUEST</h3></div>
                 </div>
                 <a href="./cart.html"><img class="cart" src="https://www.bing.com/th?id=OIP.3eKgGISBoiSTPa5lrxZErgHaFL&w=298&h=209&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt=""></a>
-                <h3></h3>
+                <h3 id="bag"></h3>
             </div>
         </div>
         <div class="homeul">
             <div class="nav-b">
             <div><ul><a href=""><li>Categories</a><span><i class="fa-sharp fa-solid fa-caret-down"></i></span></li></div>
-            <div><li><a href="">Flash Sale<span></span></a></li></div>    
-            <div><li><a href="">Best Deals<span></span></a> </li></div>    
-            <div><li><a href="">Shop by Brand<span></span></a></li></div>
-            <div><li><a href="">Trading<span></span></a></li></div>
-            <div><li><a href="">New Arrivals<span></span></a></li></ul></div>
+            <div><li><a href="./product.html">Flash Sale<span></span></a></li></div>    
+            <div><li><a href="./product.html">Best Deals<span></span></a> </li></div>    
+            <div><li><a href="./product.html">Shop by Brand<span></span></a></li></div>
+            <div><li><a href="./product.html">Trading<span></span></a></li></div>
+            <div><li><a href="./product.html">New Arrivals<span></span></a></li></ul></div>
             </div>
         </div>
     </div>
+    <div class="cont"></div>
+    <div id="cart">
+        <div id="cart_item">
+        </div>
+        <div id="pay">
+            <p class="p"><b>PRICE DETAILS</b></p>
+            <br>
+            <hr>
+            <div>
+                <h3>Price</h3>
+                <h3 id="amt"></h3>
+            </div>
+            <div>
+                <h3>Discount</h3>
+                <h3 class="green" id="dis"></h3>
+            </div>
+            <div><h3>Delivery Charges</h3><h3 class="green">Free</h3></div><br>
+            <hr><br>
+            <div><h2>Total:</h2><h2 id="tota"></h2></div><br>
+            <hr>
+            <br><br>
+            <span class="size">Apply Code <input type="text" id="in" placeholder="PREPAID200" maxlength="10"></span>
+            <button class="orange size" onClick="applyCode()">Apply</button>
+            <a href="./payment.html"><button> Proceed to Payment</button></a>
+        </div>
+    </div>
+    
+
 <footer class="footer">
     <div class="container">
         <div class="row">
@@ -92,7 +249,7 @@
             </div>
         </div>
     </div>
-    <div id="bot" >The company, product and services names used on this website are for identification purposes only. All trademarks and registered trademarks are the property of their respective owners.</div>
+    
     <div id="m_subfooter">
         Prodigious Digital Solution © 2022
     </div>
@@ -101,3 +258,104 @@
 
 </body>
 </html>
+<script>
+    let added_cart = JSON.parse(localStorage.getItem('added_to_cart'))||[];
+    let cart_item = document.querySelector('#cart_item');
+    //localStorage.setItem('carted',JSON.stringify(data));
+    let count = added_cart.length;
+    document.querySelector('#bag').innerText = "("+ count +")"
+    displaytable(added_cart);
+    function displaytable(data){
+        //cart_item.innerHTML= null;
+        data.forEach(function (element,index){
+      let D = document.createElement('div');
+      let div = document.createElement('div');
+      div.setAttribute("id","butt")
+      let image = document.createElement('img');
+      image.src = element.image_url;
+      let name = document.createElement('h3');
+      name.innerText = element.name;
+      let quantity = document.createElement("h4");
+        quantity.innerText = element.quant;
+      let rating = document.createElement('h3');
+      rating.innerText = element.rating + "⭐";
+      let button = document.createElement('button');
+      button.setAttribute("id","buttonRe")
+            button.innerText = 'Remove';
+            button.addEventListener('click',function(){
+                deleteData(added_cart,index)
+      })
+      let divInc = document.createElement('div')
+      divInc.setAttribute("id","divInc")
+      let incrBut = document.createElement("button")
+      incrBut.innerText = "+";
+      incrBut.addEventListener('click',function(){
+        element.quant++;
+        quantity.innerText=element.quant;
+          localStorage.setItem("cartData",JSON.stringify(added_cart));
+          //displaytable(cart_Data);
+          let result = ((+element.quant)*(+element.price));
+          ///quantity.innerText =+quantity.innerText+1;
+        
+          //temp = (+result).toFixed(2);
+            price.innerText =+result;
+          //window.location.reload()
+    });
+    
+      let decrBut = document.createElement("button")
+      decrBut.innerText = "-";
+      decrBut.addEventListener('click',function(){
+        if(element.quant<=1)
+            return;
+        element.quant--;
+        quantity.innerText=element.quant;
+
+        localStorage.setItem("cartData",JSON.stringify(added_cart));
+        //displaytable(cart_Data);
+        let result =(+element.quant)*(+element.price)
+        price.innerText =+result;
+        //window.location.reload()
+        
+      });
+      
+      let price = document.createElement('h2');
+      price.style.color ="orange"
+      price.innerText = '₹ '+ ((+element.quant)*(+element.price)).toFixed(0);
+      div.append(price,rating)
+      divInc.append(incrBut,quantity,decrBut)
+      D.append(image,name,div,divInc,button)
+      cart_item.append(D);
+        });
+    }
+
+    
+
+    function deleteData(key,index){
+        key.splice(index,1);
+        localStorage.setItem("added_to_cart", JSON.stringify(key));
+        window.location.reload();
+    }
+    let cartprice = added_cart.reduce((a,b)=>{
+        return (a+(+b.quant)*(+b.price));
+        
+    },0);
+    
+    document.querySelector('#amt').innerText = cartprice
+    console.log(cartprice)
+    document.getElementById("tota").innerText = cartprice
+
+    function applyCode(){
+    let x = document.querySelector('#in').value;
+    if(x=="PREPAID200"){
+      document.getElementById('dis').innerText = "-200";
+      document.getElementById('tota').innerText= ((cartprice)-200);
+      alert("Discount Applied.✅")
+    }else{
+        alert('Fill the code correctly.');
+    }
+
+    }
+
+    
+
+</script>

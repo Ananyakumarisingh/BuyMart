@@ -8,62 +8,102 @@
     <link rel="stylesheet" href="./nav-footer.css">
     <link rel="icon" href="./download.png" type="image/x-icon">
     <link rel="stylesheet" href="./slide.css">
+    <link rel="stylesheet" href="./slide.css">
     <title>BuyMart</title>
     <style>
-    /* .line{
-        border-bottom: 1px solid black;
-        width: 80%;
-        margin-left: 225px;
-        margin-top: 40px;
-        position: relative;
-        top: 30px;
-    } */
-    .body_container{
-        width: 85%;
-        margin: auto;
-        border: 1px solid red ;
-    }
-    .body_container button{
-        background-color: rgb(3, 215, 3);
-        color: white;
-        padding: 4px 8px;
-        border: none;
-        border-radius: 5px;
-    }
-    .product_parent{
-        display: grid;
-        grid-template-columns: repeat(6,1fr);
-        gap: 30px;
-    }
-    .products{
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    }
-    .products>div{
-        display: flex;
-        padding: 0 5px;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .products>div h3{
-        color: rgb(255, 145, 0);
-    }
-    .bottom_container{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-    }
+        #button{
+            padding: 6px 10px;
+            background-color: orange;
+            margin: 10px 0px 15px 30%;
+            width: 40%;
+        }
+        #body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        }
+        
+        #main{
+            width: 90%;
+            height: auto;
+            margin-top: 20px;
+            margin: auto;
+            position: relative;
+        }
+        #main img{
+            margin-top: 50px;
+            width: 100%;
+            position: absolute;
+            transition: 1s;
+        }
+            .line1{
+                margin-top: 420px;
+            }
+            #bot{
+                margin: 40px;
+                text-align: center;
+            }
+        .body_container,.bottom_container{
+            width: 90%;
+            margin: auto;
+        }
+        .body_container button,.bottom_container button{
+            background-color: rgb(3, 215, 3);
+            color: white;
+            padding: 4px 8px;
+            border: none;
+            border-radius: 5px;
+        }
+        .product_parent{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 30px;
+        }
+        .products,.bottom_child>div{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .products>div,.bottom_child>div>div{
+            display: flex;
+            padding: 0 5px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .products>div h3,.bottom_child>div>div h3{
+            color: rgb(255, 145, 0);
+        }
+        #parent_{
+            margin-top: 33%;
+        }
+        .bottom_container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:30px;
+        }
+        .arrivals{
+            margin-left: 5%;
+        }
+        .see{
+            margin-top: 170px;
+            color: rgb(71, 15, 226);
+        }
+        .first{
+            color: orange;
+            margin-left: 1px;
+            font-size: 17px;
+        }
     </style>
 </head>
 <body>
     <!-- Nav Bar -->
     <div class="header">
-        <p><span id="coupon">Up to Rs.500 Off on Prepaid Purchases - Use Coupon <span style="color:#bc522f;font-weight:bolder">"PREPAID"</span></span></p>
+        <p><span id="coupon">Up to Rs.200 Off on Prepaid Purchases - Use Coupon <span style="color:#bc522f;font-weight:bolder">"PREPAID200"</span></span></p>
         <div id="top">
             <div id="pr_logo">
                 <img  id="logo" src="./Handwritten.png" href="./index.html" alt="">
                 <input type="text" placeholder="Search" herc="">
                 <div id="accn"><a href="">Seller's Corner </a>|<a href=""> Feedback </a>|<a href=""> Blog </a>|<a href=""> Delivery Info </a></div>
                 <div class="log">
-                    <div><a href="./index.html"> LOGIN </a> / <a href="./signup.html"> SIGN UP </a></div>
+                    <div><a href="./login.html"> LOGIN </a> / <a href="./signup.html"> SIGN UP </a></div>
                     <div><h3>WELCOME GUEST</h3></div>
                 </div>
                 <a href="./cart.html"><img class="cart" src="https://www.bing.com/th?id=OIP.3eKgGISBoiSTPa5lrxZErgHaFL&w=298&h=209&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt=""></a>
@@ -72,27 +112,23 @@
         </div>
         <div class="homeul">
             <div class="nav-b">
-            <div><ul><a href=""><li>Categories</a><span><i class="fa-sharp fa-solid fa-caret-down"></i></span></li></div>
-            <div><li><a href="./flashsale.html">Flash Sale<span></span></a></li></div>    
-            <div><li><a href="">Best Deals<span></span></a> </li></div>    
-            <div><li><a href="">Shop by Brand<span></span></a></li></div>
-            <div><li><a href="">Trading<span></span></a></li></div>
-            <div><li><a href="">New Arrivals<span></span></a></li></ul></div>
+            <div class="first"><ul><a href=""><li>Categories</a><span><i class="fa-sharp fa-solid fa-caret-down"></i></span></li></div>
+            <div><li><a href="./product.html">Flash Sale<span></span></a></li></div>    
+            <div><li><a href="./product.html">Best Deals<span></span></a> </li></div>    
+            <div><li><a href="./product.html">Shop by Brand<span></span></a></li></div>
+            <div><li><a href="./product.html">Trading<span></span></a></li></div>
+            <div><li><a href="./product.html">New Arrivals<span></span></a></li></ul></div>
             </div>
         </div>
     </div>
     <div class="cont"></div>
-    <!-- Slide -->
-    <!-- <div class="slider">
-        <div class="slides">
-            radio button
-            <input type="radio" name="radio-btn" id="radio1"><input type="radio" name="radio-btn" id="radio2"><input type="radio" name="radio-btn" id="radio3"><input type="radio" name="radio-btn" id="radio4"><input type="radio" name="radio-btn" id="radio5"><input type="radio" name="radio-btn" id="radio6"><input type="radio" name="radio-btn" id="radio7"><input type="radio" name="radio-btn" id="radio8"><input type="radio" name="radio-btn" id="radio9">
-             slide strat -->
     
-             <div id="slide"></div>
+    <div id="body">
+        <div id="main">
 
-
-    <div class="body_container">
+        </div>
+    </div>
+    <div id="parent_" class="body_container">
         <div class="line1"></div>
         <h2>Fast moving products</h2>
         <div class="product_parent">
@@ -104,6 +140,7 @@
                     <h3>₹8,499</h3>
                     <h4>flat 65% OFF</h4>
                 </div>
+                <button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODcwL0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -113,6 +150,7 @@
                     <h3>₹1,299</h3>
                     <h4>flat 62% OFF</h4>
                 </div>
+                <button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODg5L1doaXRlX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -122,6 +160,7 @@
                     <h3>₹1,299</h3>
                     <h4>flat 74% OFF</h4>
                 </div>
+                <button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjIyMDgzXC9CZWlnZV9uXzFfMS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
@@ -131,6 +170,7 @@
                     <h3>₹3,299</h3>
                     <h4>flat 67% OFF</h4>
                 </div>
+                <button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjE4MDYwL1doaXRlX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -140,6 +180,7 @@
                     <h3>₹7,699</h3>
                     <h4>flat 65% OFF</h4>
                 </div>
+                <button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMjI1L1JlZF9uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
@@ -149,7 +190,9 @@
                     <h3>₹8,999</h3>
                     <h4>flat 64% OFF</h4>
                 </div>
+                <button id="button">Add to Cart</button>
             </div>
+            <div class="see"><a href="./product.html"><h2>See More <i class="fa-sharp fa-solid fa-caret-down"></i></h2></a></div>
         </div>
     </div>
     <div class="body_container">
@@ -164,6 +207,7 @@
                     <h3>₹4,999</h3>
                     <h4>flat 72% OFF</h4>
                 </div>
+                <button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxOTEwL011bHRpfmNvbG9yX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -173,6 +217,7 @@
                     <h3>₹3,799</h3>
                     <h4>flat 73% OFF</h4>
                 </div>
+                <button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyMTE1L0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -181,7 +226,7 @@
                 <div>
                     <h3>₹8,499</h3>
                     <h4>flat 65% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxOTAzL0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -190,7 +235,7 @@
                 <div>
                     <h3>₹3,499</h3>
                     <h4>flat 73% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyMTE2L0dvbGRfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
@@ -199,7 +244,7 @@
                 <div>
                     <h3>₹2,999</h3>
                     <h4>flat 73% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyMTExL0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -208,8 +253,9 @@
                 <div>
                     <h3>₹45,000</h3>
                     <h4>flat 53% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
+            <div class="see"><h2>See More <i class="fa-sharp fa-solid fa-caret-down"></i></h2></div>
         </div>
     </div>
     <div class="body_container">
@@ -223,7 +269,7 @@
                 <div>
                     <h3>₹3,999</h3>
                     <h4>flat 33% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MzE2L1Bvd2Rlcl8zNl8zX2NhcG9uZX5oYW5hfnRyZW5kfndvbWVufnBvd2Rlcn5iYWxsZXR+fjMyZDd+MS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
@@ -232,7 +278,7 @@
                 <div>
                     <h3>₹3,999</h3>
                     <h4>flat 33% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MjEyL1BsYXRpbnVtXzM2XzNfY2Fwb25lfmhhbmF+dHJlbmR+d29tZW5+cGxhdGludW1+YmFsbGV+YWV+MTgxLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -241,7 +287,7 @@
                 <div>
                     <h3>₹3,999</h3>
                     <h4>flat 33% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MjA2L011bHRpY29sb3JlZF8zNl8xX2NhcG9uZX5oYW5hfnRyZW5kfndvbWVufm11bHRpY29sb3JlZH5ifn4yMzE1MS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
@@ -250,7 +296,7 @@
                 <div>
                     <h3>₹3,999</h3>
                     <h4>flat 27% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MjA5L1llbGxvd18zNl84X2NhcG9uZX5oYW5hfnRyZW5kfndvbWVufnllbGxvd35iYWxsZXR+fjV+MzQwMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
@@ -259,7 +305,7 @@
                 <div>
                     <h3>₹3,999</h3>
                     <h4>flat 33% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MjcyL0JsYWNrXzM2XzFfY2Fwb25lfmhhbmF+dHJlbmR+d29tZW5+YmxhY2t+YmFsbGV0fmZ+NmRkNGYxLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -268,8 +314,9 @@
                 <div>
                     <h3>₹3,900</h3>
                     <h4>flat 33% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
+            <div class="see"><h2>See More <i class="fa-sharp fa-solid fa-caret-down"></i></h2></div>
         </div>
     </div>
     <div class="body_container">
@@ -283,7 +330,7 @@
                 <div>
                     <h3>₹5,499</h3>
                     <h4>flat 21% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM0OTgyL011bHRpY29sb3JlZF9TVERfMl9jYXBvbmV+bGV2YW50ZX53b21lbn5tdWx0aWNvbG9yZWR+aGFuZH5lfmFjYjYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
@@ -292,7 +339,7 @@
                 <div>
                     <h3>₹3,499</h3>
                     <h4>flat 30% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MzgwL1Jvc2VfU1RBTkRBUkRfMl9jYXBvbmV+bGV2YW50ZX53b21lbn5yb3NlfmhhbmRiYWd+fjU3ODN+LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -301,7 +348,7 @@
                 <div>
                     <h3>₹6,999</h3>
                     <h4>flat 65% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MzA3L0xlb3BhcmRfbl81X2NhcG9uZX5sZXZhbnRlfndvbWVufmxlb3BhcmR+aGFuZGJhZ35kfmJjMTMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
@@ -310,7 +357,7 @@
                 <div>
                     <h3>₹3,499</h3>
                     <h4>flat 73% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MjMyL051ZGVfU1RBTkRBUkRfM19jYXBvbmV+bWVydmlsbGV+d29tZW5+bnVkZX5oYW5kYmFnfmQyNzA2Yi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
@@ -319,7 +366,7 @@
                 <div>
                     <h3>₹5,499</h3>
                     <h4>flat 21% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM0OTgyL011bHRpY29sb3JlZF9TVERfMl9jYXBvbmV+bGV2YW50ZX53b21lbn5tdWx0aWNvbG9yZWR+aGFuZH5lfmFjYjYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
@@ -328,8 +375,9 @@
                 <div>
                     <h3>₹3,499</h3>
                     <h4>flat 30% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
+            <div class="see"><h2>See More <i class="fa-sharp fa-solid fa-caret-down"></i></h2></div>
         </div>
     </div>
     <div class="body_container">
@@ -343,7 +391,7 @@
                 <div>
                     <h3>₹7,999</h3>
                     <h4>flat 72% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM0MjY1L1Bpbmtfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
@@ -352,7 +400,7 @@
                 <div>
                     <h3>₹4,799</h3>
                     <h4>flat 73% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjIzOTc0L0dyZWVuX25fMV9NaXhlckdyaW5kZXIxLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -361,7 +409,7 @@
                 <div>
                     <h3>₹4,499</h3>
                     <h4>flat 65% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjIzOTgwL0JsdWVfbl8xX0hhbmRUeXBlRm9hbStNYWtlcjEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
@@ -370,7 +418,7 @@
                 <div>
                     <h3>₹5,199</h3>
                     <h4>flat 73% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjIzODA0L1doaXRlX25fMV9KdWljZXJtaXhlcjEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
@@ -379,7 +427,7 @@
                 <div>
                     <h3>₹3,599</h3>
                     <h4>flat 73% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjIzODA5L0JsYWNrX25fMV9KdWljZXJtaXhlcjEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
@@ -388,8 +436,9 @@
                 <div>
                     <h3>₹3,900</h3>
                     <h4>flat 53% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
+            <div class="see"><h2>See More <i class="fa-sharp fa-solid fa-caret-down"></i></h2></div>
 
             
 
@@ -411,7 +460,7 @@
                 <div>
                     <h3>₹4,999</h3>
                     <h4>flat 72% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyMTM0L1JlZF9uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
@@ -420,7 +469,7 @@
                 <div>
                     <h3>₹11,999</h3>
                     <h4>flat 73% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMTM3L1Jvc2Vfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
@@ -429,7 +478,7 @@
                 <div>
                     <h3>₹4,499</h3>
                     <h4>flat 65% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMTM2L0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -438,7 +487,7 @@
                 <div>
                     <h3>₹6,499</h3>
                     <h4>flat 73% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjI0Mzk1L0JsYWNrX25fMV9XaXJlZEtleWJvYXJkMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
@@ -447,7 +496,7 @@
                 <div>
                     <h3>₹3,599</h3>
                     <h4>flat 73% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjE3NzM4L0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -456,8 +505,9 @@
                 <div>
                     <h3>₹5,900</h3>
                     <h4>flat 53% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
+            <div class="see"><h2>See More <i class="fa-sharp fa-solid fa-caret-down"></i></h2></div>
         </div>
     </div>
     <div class="body_container">
@@ -471,7 +521,7 @@
                 <div>
                     <h3>₹8,999</h3>
                     <h4>flat 61% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNzM4L0JsdWVfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
@@ -480,7 +530,7 @@
                 <div>
                     <h3>₹6,999</h3>
                     <h4>flat 65% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzOTk5L0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -489,7 +539,7 @@
                 <div>
                     <h3>₹4,999</h3>
                     <h4>flat 67% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM0MDk0L0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -498,7 +548,7 @@
                 <div>
                     <h3>₹6,999</h3>
                     <h4>flat 70% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNzQwL0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -507,7 +557,7 @@
                 <div>
                     <h3>₹3,999</h3>
                     <h4>flat 73% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjI3NDk2L0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -516,8 +566,9 @@
                 <div>
                     <h3>₹9,900</h3>
                     <h4>flat 75% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
+            <div class="see"><h2>See More <i class="fa-sharp fa-solid fa-caret-down"></i></h2></div>
         </div>
     </div>
     <div class="body_container">
@@ -531,7 +582,7 @@
                 <div>
                     <h3>₹2,999</h3>
                     <h4>flat 61% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyMTMyL0JsdWVfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
@@ -540,16 +591,16 @@
                 <div>
                     <h3>₹6,999</h3>
                     <h4>flat 65% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxNzA3L0dyZWVuX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
-                <h3>Makeup & Jewelry Organizer</h3>
+                <h3></h3>
                 <button>3.8/5 <i class="fa-solid fa-star"></i></button>
                 <div>
                     <h3>₹4,999</h3>
                     <h4>flat 67% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyMDYwL0dyZWVuX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -558,7 +609,7 @@
                 <div>
                     <h3>₹6,999</h3>
                     <h4>flat 70% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyMTMxL1Bpbmtfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
@@ -567,7 +618,7 @@
                 <div>
                     <h3>₹3,999</h3>
                     <h4>flat 73% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxNzA5L0dyZWVuX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -576,8 +627,9 @@
                 <div>
                     <h3>₹2,800</h3>
                     <h4>flat 75% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
+            <div class="see"><h2>See More <i class="fa-sharp fa-solid fa-caret-down"></i></h2></div>
         </div>
     </div>
     <div class="body_container">
@@ -591,7 +643,7 @@
                 <div>
                     <h3>₹6,999</h3>
                     <h4>flat 71% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyMDA4L1BpbmtfU18xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
@@ -600,7 +652,7 @@
                 <div>
                     <h3>₹2,999</h3>
                     <h4>flat 65% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyMDEwL0JsdWVfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
@@ -609,7 +661,7 @@
                 <div>
                     <h3>₹4,999</h3>
                     <h4>flat 67% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxODQyL0dyZWVuX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -618,7 +670,7 @@
                 <div>
                     <h3>₹6,999</h3>
                     <h4>flat 70% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxNzU3L1doaXRlX25fMV85MTAyOTg1NjY2XzEwNzA2NTQ2MC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
@@ -627,7 +679,7 @@
                 <div>
                     <h3>₹5,999</h3>
                     <h4>flat 73% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxODQ1L0dyYXlfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
@@ -636,8 +688,9 @@
                 <div>
                     <h3>₹2,800</h3>
                     <h4>flat 75% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
+            <div class="see"><h2>See More <i class="fa-sharp fa-solid fa-caret-down"></i></h2></div>
         </div>
     </div>
     <div class="body_container">
@@ -651,7 +704,7 @@
                 <div>
                     <h3>₹5,499</h3>
                     <h4>flat 31% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODM5L0Jyb3duX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -660,7 +713,7 @@
                 <div>
                     <h3>₹5,499</h3>
                     <h4>flat 35% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODYwL0dyYXlfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
@@ -669,7 +722,7 @@
                 <div>
                     <h3>₹3,599</h3>
                     <h4>flat 37% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODQzL1llbGxvd19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
@@ -678,7 +731,7 @@
                 <div>
                     <h3>₹1,499</h3>
                     <h4>flat 30% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODQyL0JsYWNrX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -687,7 +740,7 @@
                 <div>
                     <h3>₹1,999</h3>
                     <h4>flat 33% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODYzL1Bpbmtfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
@@ -696,8 +749,9 @@
                 <div>
                     <h3>₹1,800</h3>
                     <h4>flat 35% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
+            <div class="see"><h2>See More <i class="fa-sharp fa-solid fa-caret-down"></i></h2></div>
         </div>
     </div>
     <div class="body_container">
@@ -711,16 +765,16 @@
                 <div>
                     <h3>₹5,499</h3>
                     <h4>flat 31% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MDI0L0hvdW5kc3Rvb3RoXzM2XzJfY2Fwb25lfnNlbHZhfnBvaW50ZWR+dG9lfmNyb3diYXJ+cGF0dGV+ZDA3fjJlLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
-                <h3>Wemen Pointed Toe Crowbar Pattern Heel</h3>
+                <h3>Women Pointed Toe Crowbar Pattern Heel</h3>
                 <button>4.1/5 <i class="fa-solid fa-star"></i></button>
                 <div>
                     <h3>₹5,499</h3>
                     <h4>flat 35% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1NDAzL0JsYWNrXzM2XzJfY2Fwb25lfnBvaW50ZWR+dG9lfnB5cmFtaWR+cGF0dGVybn5wYXR+NX5lMTMxLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -729,7 +783,7 @@
                 <div>
                     <h3>₹6,599</h3>
                     <h4>flat 37% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MzYxL01pbnQrR3JlZW5fMzZfMV9jYXBvbmV+b3V0Zml0dGVyc34xMjAyfndvbWVufm1pbnR+Z3JlZX40MDFjfmEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
@@ -738,7 +792,7 @@
                 <div>
                     <h3>₹6,999</h3>
                     <h4>flat 30% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MzQ1L0xlb3BhcmRfMzZfM19jYXBvbmV+b3V0Zml0dGVyc342NX53b21lbn5sZW9wYXJkfnN0aX40NDl+MjEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
@@ -747,7 +801,7 @@
                 <div>
                     <h3>₹5,999</h3>
                     <h4>flat 33% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM1MjI0L011bHRpY29sb3JlZF80Ml84X2NhcG9uZX5ibG9ja35oZWVsfnNsaW5nYmFja353b21lbn5tdWx0fjU4ZTA1MS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
@@ -756,8 +810,9 @@
                 <div>
                     <h3>₹5,800</h3>
                     <h4>flat 35% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
+            <div class="see"><h2>See More <i class="fa-sharp fa-solid fa-caret-down"></i></h2></div>
         </div>
     </div>
     <div class="body_container">
@@ -771,7 +826,7 @@
                 <div>
                     <h3>₹5,999</h3>
                     <h4>flat 31% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM0NTkxL1doaXRlX1NfMV8xLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -780,7 +835,7 @@
                 <div>
                     <h3>₹5,499</h3>
                     <h4>flat 35% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM0ODQwL1BpbmtfU18xXzEucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
@@ -789,7 +844,7 @@
                 <div>
                     <h3>₹6,599</h3>
                     <h4>flat 37% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM0NjM0L1doaXRlX1NfMV8xLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -798,7 +853,7 @@
                 <div>
                     <h3>₹9,999</h3>
                     <h4>flat 30% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM0Njc2L1BpbmtfU18xXzEucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
@@ -807,7 +862,7 @@
                 <div>
                     <h3>₹5,999</h3>
                     <h4>flat 33% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
             <div class="products">
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM0Nzc5L0Jyb3duX1NfMV8xLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19" alt="">
@@ -816,12 +871,13 @@
                 <div>
                     <h3>₹5,800</h3>
                     <h4>flat 35% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
+            <div class="see"><h2>See More <i class="fa-sharp fa-solid fa-caret-down"></i></h2></div>
         </div>
     </div>
+    <h2 class="arrivals">NEW ARRIVALS</h2>
     <div class="bottom_container">
-        <h2>NEW ARRIVALS</h2>
         <div class="bottom_child">
             <div>
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2NTIzXC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
@@ -830,7 +886,7 @@
                 <div>
                     <h3>₹5,999</h3>
                     <h4>flat 31% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
         </div>
         <div class="bottom_child">
@@ -841,7 +897,7 @@
                 <div>
                     <h3>₹3,999</h3>
                     <h4>flat 31% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
         </div>
         <div class="bottom_child">
@@ -852,7 +908,7 @@
                 <div>
                     <h3>₹1,999</h3>
                     <h4>flat 31% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
         </div>
         <div class="bottom_child">
@@ -863,7 +919,7 @@
                 <div>
                     <h3>₹5,999</h3>
                     <h4>flat 31% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
         </div>
         <div class="bottom_child">
@@ -874,7 +930,7 @@
                 <div>
                     <h3>₹5,999</h3>
                     <h4>flat 31% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
         </div>
         <div class="bottom_child">
@@ -885,7 +941,7 @@
                 <div>
                     <h3>₹5,999</h3>
                     <h4>flat 31% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
         </div>
         <div class="bottom_child">
@@ -896,7 +952,7 @@
                 <div>
                     <h3>₹5,999</h3>
                     <h4>flat 31% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
         </div>
         <div class="bottom_child">
@@ -907,10 +963,9 @@
                 <div>
                     <h3>₹5,999</h3>
                     <h4>flat 31% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
         </div>
-
         <div class="bottom_child">
             <div>
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2MzU2XC9Vbmtub3duX25fM19PMUNOMDE2VDFjeUwxVXBqVFZZdTlQRF9+fjMwNDM3OTI1Njd+MH5jaWIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
@@ -919,7 +974,7 @@
                 <div>
                     <h3>₹5,999</h3>
                     <h4>flat 31% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
         </div>
         <div class="bottom_child">
@@ -930,10 +985,9 @@
                 <div>
                     <h3>₹5,999</h3>
                     <h4>flat 31% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
         </div>
-
         <div class="bottom_child">
             <div>
                 <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2MzAwXC9Jdm9yeV9uXzNfOTIxMDU5NzIyM180ODg4OTQzNTguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
@@ -942,7 +996,7 @@
                 <div>
                     <h3>₹5,999</h3>
                     <h4>flat 31% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
         </div>
         <div class="bottom_child">
@@ -953,7 +1007,7 @@
                 <div>
                     <h3>₹5,999</h3>
                     <h4>flat 31% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
         </div>
         <div class="bottom_child">
@@ -964,7 +1018,7 @@
                 <div>
                     <h3>₹5,999</h3>
                     <h4>flat 31% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
         </div>
         <div class="bottom_child">
@@ -975,7 +1029,7 @@
                 <div>
                     <h3>₹5,999</h3>
                     <h4>flat 31% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
         </div>
         <div class="bottom_child">
@@ -986,7 +1040,7 @@
                 <div>
                     <h3>₹5,999</h3>
                     <h4>flat 31% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
         </div>
         <div class="bottom_child">
@@ -997,7 +1051,7 @@
                 <div>
                     <h3>₹5,999</h3>
                     <h4>flat 31% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
         </div>
         <div class="bottom_child">
@@ -1008,7 +1062,7 @@
                 <div>
                     <h3>₹5,999</h3>
                     <h4>flat 31% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
         </div>
         <div class="bottom_child">
@@ -1019,7 +1073,7 @@
                 <div>
                     <h3>₹5,999</h3>
                     <h4>flat 31% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
         </div>
         <div class="bottom_child">
@@ -1030,10 +1084,11 @@
                 <div>
                     <h3>₹5,999</h3>
                     <h4>flat 31% OFF</h4>
-                </div>
+                </div><button id="button">Add to Cart</button>
             </div>
         </div>
-    </div>
+    
+    <div class="bottom_child">
     <div>
         <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2NTIzXC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==" alt="">
         <h3>T10 Smart Watch With Earburds</h3>
@@ -1041,10 +1096,10 @@
         <div>
             <h3>₹5,999</h3>
             <h4>flat 31% OFF</h4>
-        </div>
+        </div><button id="button">Add to Cart</button>
     </div>
-</div>
-<div class="bottom_child">
+    </div>
+    <div class="bottom_child">
     <div>
         <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2NDkzXC9SZWRfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
         <h3>LOFREE Wireless Mouse</h3>
@@ -1063,7 +1118,7 @@
         <div>
             <h3>₹1,999</h3>
             <h4>flat 31% OFF</h4>
-        </div>
+        </div><button id="button">Add to Cart</button>
     </div>
 </div>
 <div class="bottom_child">
@@ -1074,7 +1129,7 @@
         <div>
             <h3>₹5,999</h3>
             <h4>flat 31% OFF</h4>
-        </div>
+        </div><button id="button">Add to Cart</button>
     </div>
 </div>
 <div class="bottom_child">
@@ -1085,7 +1140,7 @@
         <div>
             <h3>₹5,999</h3>
             <h4>flat 31% OFF</h4>
-        </div>
+        </div><button id="button">Add to Cart</button>
     </div>
 </div>
 <div class="bottom_child">
@@ -1096,7 +1151,7 @@
         <div>
             <h3>₹5,999</h3>
             <h4>flat 31% OFF</h4>
-        </div>
+        </div><button id="button">Add to Cart</button>
     </div>
 </div>
 <div class="bottom_child">
@@ -1118,7 +1173,7 @@
         <div>
             <h3>₹5,999</h3>
             <h4>flat 31% OFF</h4>
-        </div>
+        </div><button id="button">Add to Cart</button>
     </div>
 </div>
 
@@ -1130,7 +1185,7 @@
         <div>
             <h3>₹5,999</h3>
             <h4>flat 31% OFF</h4>
-        </div>
+        </div><button id="button">Add to Cart</button>
     </div>
 </div>
 <div class="bottom_child">
@@ -1141,7 +1196,7 @@
         <div>
             <h3>₹5,999</h3>
             <h4>flat 31% OFF</h4>
-        </div>
+        </div><button id="button">Add to Cart</button>
     </div>
 </div>
 
@@ -1153,7 +1208,7 @@
         <div>
             <h3>₹5,999</h3>
             <h4>flat 31% OFF</h4>
-        </div>
+        </div><button id="button">Add to Cart</button>
     </div>
 </div>
 <div class="bottom_child">
@@ -1164,7 +1219,7 @@
         <div>
             <h3>₹5,999</h3>
             <h4>flat 31% OFF</h4>
-        </div>
+        </div><button id="button">Add to Cart</button>
     </div>
 </div>
 <div class="bottom_child">
@@ -1175,7 +1230,7 @@
         <div>
             <h3>₹5,999</h3>
             <h4>flat 31% OFF</h4>
-        </div>
+        </div><button id="button">Add to Cart</button>
     </div>
 </div>
 <div class="bottom_child">
@@ -1186,7 +1241,7 @@
         <div>
             <h3>₹5,999</h3>
             <h4>flat 31% OFF</h4>
-        </div>
+        </div><button id="button">Add to Cart</button>
     </div>
 </div>
 <div class="bottom_child">
@@ -1197,7 +1252,7 @@
         <div>
             <h3>₹5,999</h3>
             <h4>flat 31% OFF</h4>
-        </div>
+        </div><button id="button">Add to Cart</button>
     </div>
 </div>
 <div class="bottom_child">
@@ -1208,7 +1263,7 @@
         <div>
             <h3>₹5,999</h3>
             <h4>flat 31% OFF</h4>
-        </div>
+        </div><button id="button">Add to Cart</button>
     </div>
 </div>
 <div class="bottom_child">
@@ -1219,7 +1274,7 @@
         <div>
             <h3>₹5,999</h3>
             <h4>flat 31% OFF</h4>
-        </div>
+        </div><button id="button">Add to Cart</button>
     </div>
 </div>
 <div class="bottom_child">
@@ -1230,7 +1285,7 @@
         <div>
             <h3>₹5,999</h3>
             <h4>flat 31% OFF</h4>
-        </div>
+        </div><button id="button">Add to Cart</button>
     </div>
 </div>
 <div class="bottom_child">
@@ -1241,12 +1296,34 @@
         <div>
             <h3>₹5,999</h3>
             <h4>flat 31% OFF</h4>
-        </div>
+        </div><button id="button">Add to Cart</button>
+    </div>
+</div>
+<div class="bottom_child">
+    <div>
+        <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2Mzg2XC9Vbmtub3duX25fNl9PMUNOMDFlTTZNU3ExUk5PNlZhZDVwSV9+fjI4ODQ4NjIwOTl+MH5jaWIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+        <h3>4Pcs Cartoon Painting Templet Set</h3>
+        <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+        <div>
+            <h3>₹5,999</h3>
+            <h4>flat 31% OFF</h4>
+        </div><button id="button">Add to Cart</button>
+    </div>
+</div>
+<div class="bottom_child">
+    <div>
+        <img src="https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjM2Mzc1XC9Vbmtub3duX25fN18yMzQ5NDk0MDU4OF8yODAwMTM3NTcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" alt="">
+        <h3>6Pcs set color Jel Pen</h3>
+        <button>4.8/5 <i class="fa-solid fa-star"></i></button>
+        <div>
+            <h3>₹5,999</h3>
+            <h4>flat 31% OFF</h4>
+        </div><button id="button">Add to Cart</button>
     </div>
 </div>
 </div>
 
-
+<div id="bot" >The company, product and services names used on this website are for identification purposes only.<br>All trademarks and registered trademarks are the property of their respective owners.</div>
     <!-- Footer -->
         <footer class="footer">
             <div class="container">
@@ -1322,48 +1399,62 @@
 <script>
     let array=[
         {
-            img_url:"https://d64lkarmo2mrq.cloudfront.net/img/home/international-banner-02.webp"
+            img:"/international-banner-02.png"
         },
         {
-            img_url:"https://d64lkarmo2mrq.cloudfront.net/img/home/watch-offer-banner.webp"
+            img:"https://d64lkarmo2mrq.cloudfront.net/img/home/made-in-turkey.webp"
         },
         {
-            img_url:"https://d64lkarmo2mrq.cloudfront.net/img/home/turkey-fashion.webp"
+            img:"https://d64lkarmo2mrq.cloudfront.net/img/home/turkey-fashion.webp"
         },
         {
-            img_url:"https://d64lkarmo2mrq.cloudfront.net/img/home/prepaid-order-free-watch-banner.webp"
-        },
-
-        {
-            img_url:"https://d64lkarmo2mrq.cloudfront.net/img/home/34535_new_arrivals.webp"
+            img:"https://d64lkarmo2mrq.cloudfront.net/img/home/34535_new_arrivals.webp"
         },
         {
-            img_url:"https://d64lkarmo2mrq.cloudfront.net/img/home/4544_500_off.webp"
+            img:"https://d64lkarmo2mrq.cloudfront.net/img/home/4544_500_off.webp"
         },
         {
-            img_url:"https://d64lkarmo2mrq.cloudfront.net/img/home/544545_best_selling.webp"
+            img:"https://d64lkarmo2mrq.cloudfront.net/img/home/544545_best_selling.webp"
         },
         {
-            img_url:"https://d64lkarmo2mrq.cloudfront.net/img/home/new-global.webp"
+            img:"https://d64lkarmo2mrq.cloudfront.net/img/home/watch-offer-banner.webp"
         },
         {
-            img_url:"https://d64lkarmo2mrq.cloudfront.net/img/home/prepaid-order-free-watch-banner.webp"
+            img:"https://d64lkarmo2mrq.cloudfront.net/img/home/watch-offer-banner.webp"
+        },
+        {
+            img:"https://d64lkarmo2mrq.cloudfront.net/img/home/new-global.webp"
         }
-            ]
-
+    ]
     let count=0;
-
-    function displayImg(array){
-        document.querySelector('#slide').innerHTML='';
-        count++
+    function slider(array){
+        // document.querySelector("#main").innerHTML='';
         for(let i=count; i<=count; i++){
-            if(count>array.length-1){
-                count=1;
-                // clearInterval(start);
+            if(count>=array.length-1){
+                count=0;
+                clearInterval(call)
+            }else{
+                let D= document.createElement('div');
+            let image = document.createElement('img');
+            image.src = array[i].img;
+            console.log(image)
+            D.append(image)
+            document.querySelector("#main").append(D)
             }
-            break;
+           
         }
+        count++;
+        console.log(count)
+    }
+    function call(){
+        let start = setInterval (()=>{
+        slider(array)
+        },2000)
     }
 
-displayImg()
+    call()
+
+   
+
+
 </script>
