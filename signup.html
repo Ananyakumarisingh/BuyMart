@@ -116,15 +116,9 @@
                 <p class="left"><b>Email Address</b></p>
                 <input type="email" placeholder="Email Address" id="email"><br><br>
                 <p class="left"><b>Password</b></p>
-<<<<<<< HEAD
                 <input type="password" placeholder="Password" id="password" required><br><br>
                 <p class="left"><b>Confirm Password</b></p>
                 <input type="password" placeholder="Password Confirm" id="passwordC" required><br><br>
-=======
-                <input type="password" placeholder="Password" id="password"><br><br>
-                <p class="left"><b>Confirm Password</b></p>
-                <input type="password" placeholder="Password Confirm" id="passwordC"><br><br>
->>>>>>> dd932a6bf19195cfdbaba3b3cb097b2332f0ff65
                 <button id="login">Sign Up</button><br>
                 <p class="sup">By signing up, you agree to our <span>Terms of Use & Privacy Policy</span></p><br>
                 <p>Already have an account?</p><br>
@@ -189,38 +183,19 @@
 </html>
 <script>
     let form = document.querySelector('form');
-<<<<<<< HEAD
     form.addEventListener('submit',function(e){
         e.preventDefault();
         localStorage.setItem("credentials", JSON.stringify({}));
-=======
-    let arr = JSON.parse(localStorage.getItem("login"))||[]
-    form.addEventListener('submit',function(e){
-        e.preventDefault();
->>>>>>> dd932a6bf19195cfdbaba3b3cb097b2332f0ff65
         let obj = {
             email : form.email.value,
             password: form.password.value,
             cPassword: form.passwordC.value
         }
-<<<<<<< HEAD
         if(form.password.value!=form.passwordC.value){
             alert("❗ Please fill the same password.")
         }
         else{
             localStorage.setItem("credentials", JSON.stringify(obj));
-=======
-        arr.push(obj);
-        localStorage.setItem("credentials", JSON.stringify(arr));
-        if(obj.email == ""||obj.cPassword=="" || obj.password == ""){
-        alert("❗ Please fill all the details.")
-        }if(obj.password!=obj.cPassword){
-            alert("❗ Please fill the same password.")
-        }
-        else{
-            arr.push(obj)
-            localStorage.setItem("credentials", JSON.stringify(arr));
->>>>>>> dd932a6bf19195cfdbaba3b3cb097b2332f0ff65
             alert("Sign up suceessfully. ✅");
             window.location.assign("login.html");
         }
